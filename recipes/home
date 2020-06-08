@@ -1,0 +1,45 @@
+partman-auto/text/home_scheme ::
+
+1 1 1 free
+	$iflabel{ gpt }
+	$reusemethod{ }
+	method{ biosgrub } .
+
+512 1024 2048 ext4
+	$defaultignore{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	filesystem{ ext4 }
+	mountpoint{ /boot } .
+
+13000 20000 40000 btrfs
+	$lvmok{ }
+	method{ format }
+	format{ }
+	label{ KaisenLinux }
+	use_filesystem{ }
+        options/autodefrag{ autodefrag }
+        options/nodatacow{ nodatacow }
+        options/discard{ discard }
+        options/noatime{ noatime }
+        options/nodiratime{ nodiratime }
+        options/compress{ compress=zstd }
+        use_filesystem{ }
+	filesystem{ btrfs }
+	mountpoint{ / } .
+
+5000 10000 -1 btrfs
+	$lvmok{ }
+	method{ format }
+	format{ }
+	label{ KaisenHome }
+	options/autodefrag{ autodefrag }
+	options/nodatacow{ nodatacow }
+	options/discard{ discard }
+	options/noatime{ noatime }
+	options/nodiratime{ nodiratime }
+	options/compress{ compress=zstd }
+	use_filesystem{ }
+	filesystem{ btrfs }
+	mountpoint{ /home } .

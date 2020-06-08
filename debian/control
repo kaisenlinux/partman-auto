@@ -1,0 +1,13 @@
+Source: partman-auto
+Section: debian-installer
+Priority: standard
+XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+
+Package: partman-auto
+Package-Type: udeb
+Architecture: any
+Depends: ${misc:Depends}, di-utils, partman-base (>= 129), partman-basicfilesystems, partman-ext3 [linux-any], partman-ufs [kfreebsd-any]
+Description: Automatically partition storage devices (partman)

@@ -1,0 +1,30 @@
+partman-auto/text/atomic_scheme ::
+
+538 538 1075 free
+	$iflabel{ gpt }
+	$reusemethod{ }
+	method{ efi }
+	format{ } .
+
+512 1024 2048 ext4
+	$defaultignore{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	filesystem{ ext4 }
+	mountpoint{ /boot } .
+
+10000 30000 -1 btrfs
+	$lvmok{ }
+	method{ format }
+	format{ }
+	label{ KaisenLinux }
+	options/autodefrag{ autodefrag }
+	options/nodatacow{ nodatacow }
+	options/discard{ discard }
+	options/noatime{ noatime }
+	options/nodiratime{ nodiratime }
+	options/compress{ compress=zstd }
+	use_filesystem{ }
+	filesystem{ btrfs }
+	mountpoint{ / } .
