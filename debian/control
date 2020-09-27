@@ -3,8 +3,9 @@ Section: debian-installer
 Priority: standard
 XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
-Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/partman-auto
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/partman-auto.git
 
 Package: partman-auto
 Package-Type: udeb
