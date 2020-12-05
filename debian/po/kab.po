@@ -3,52 +3,37 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of eu.po to Euskara
-# Basque messages for debian-installer.
-# Copyright (C) 2003 Software in the Public Interest, Inc.
-# This file is distributed under the same license as debian-installer.
-# Translations from iso-codes:
-# Copyright (C)
-# Translations from KDE:
-# Piarres Beobide <pi@beobide.net>, 2004-2009, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2010.
-# Mikel Olasagasti <hey_neken@mundurat.net>, 2004.
-# Piarres Beobide Egaña <pi@beobide.net>, 2004,2006,2007, 2008, 2009.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2010.
-# Free Software Foundation, Inc., 2002.
-# Alastair McKinstry <mckinstry@computer.org>, 2002.
-# Marcos Goienetxe <marcos_g@infonegocio.com>, 2002.
-# Piarres Beobide <pi@beobide.net>, 2008.
-# Xabier Bilbao <xabidu@gmail.com>, 2008.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2020.
+# Kabyle translation for debian-installer
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the debian-installer package.
+# Slimane Selyan Amiri <selyan.kab@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: di-sublevel1_eu\n"
+"Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2020-11-03 18:23+0100\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
-"Language-Team: Basque <librezale@librezale.eus>\n"
-"Language: eu\n"
+"PO-Revision-Date: 2020-10-24 15:08+0100\n"
+"Last-Translator: Slimane Selyan Amiri <selyan.kab@gmail.com>\n"
+"Language-Team: Kabyle <kab@li.org>\n"
+"Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
 msgid "Please wait..."
-msgstr "Itxaron..."
+msgstr "Ttxil-k·m rǧu..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:2001
 msgid "Computing the new partitions..."
-msgstr "Partizio berriak kalkulatzen..."
+msgstr "Asiḍen n yiḥricen imaynuten…"
 
 #. Type: error
 #. Description
@@ -58,7 +43,7 @@ msgstr "Partizio berriak kalkulatzen..."
 #. :sl2:
 #: ../partman-auto.templates:3001 ../partman-auto.templates:4001
 msgid "Failed to partition the selected disk"
-msgstr "Huts egin du hautatutako diskoan partizioa egitean"
+msgstr "Beṭṭu n uḍebsi i d-yettufernen yecceḍ"
 
 #. Type: error
 #. Description
@@ -68,8 +53,8 @@ msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
 msgstr ""
-"Baliteke hautatutako diskoa edo leku librea txikiegia izatea partizioak "
-"automatikoki egiteko."
+"Ahat yeḍra-d waya acku aḍebsi i yettwafernen n tallunt tilellit mecṭuḥet "
+"aṭas i wakken ad tettwabḍu s wudem awurman."
 
 #. Type: error
 #. Description
@@ -78,7 +63,8 @@ msgstr ""
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
-msgstr "Baliteke (lehen mailako) partizio gehiegi egotea partizio-taulan."
+msgstr ""
+"Ahat yeḍra-d waya acku llan aṭas n yiḥricen (igejdanen) deg tfelwit n uḥric."
 
 #. Type: select
 #. Description
@@ -88,7 +74,7 @@ msgstr "Baliteke (lehen mailako) partizio gehiegi egotea partizio-taulan."
 #. :sl1:
 #: ../partman-auto.templates:5001 ../partman-auto.templates:9001
 msgid "Partitioning method:"
-msgstr "Partizioak egiteko metodoa:"
+msgstr "Tarrayt n beṭṭu:"
 
 #. Type: select
 #. Description
@@ -100,10 +86,9 @@ msgid ""
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"Instalatzaile honek Debian-ek erabiltzeko disko batean partizioak nola egin "
-"ditzakezun azal diezazuke edo, nahi izanez gero, eskuz egin ditzakezu. "
-"Partizioak egiteko gidatutako tresna erabiltzea aukeratzen baduzu, geroago "
-"emaitzak ikusi eta pertsonalizatzeko aukera duzu."
+"Asebdad yezmer ad ak·akem-iwelleh mi ara tebduḍ aḍebsi (s useqdec n yizenzaɣ "
+"isluganen yemdarraden) neɣ, ma yella tesmenyafeḍ, ad t-tgeḍ s ufus. S "
+"uwelleh n beṭṭu, ad ak·am-tili tegnit mbeɛd i usenqed d usagen n yigmaḍ."
 
 #. Type: select
 #. Description
@@ -116,15 +101,15 @@ msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
 msgstr ""
-"Disko osoaren partizioak gidatuta egitea aukeratzen baduzu, zein disko "
-"erabiltzea nahi duzun galdetuko zaizu."
+"Ma yella tferneḍ beṭṭu yettuwellhen i uḍebsi s lekmal-is, ɣer sdat ad "
+"tettusutreḍ anwa aḍebsi i ilaq ad yettuseqdec."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:10001
 msgid "Partitioning scheme:"
-msgstr "Partizio-eskema:"
+msgstr "Azenziɣ n beṭṭu:"
 
 #. Type: select
 #. Description
@@ -137,7 +122,7 @@ msgstr "Partizio-eskema:"
 #. at the end of the sentence. Please keep it.
 #: ../partman-auto.templates:10001
 msgid "Selected for partitioning:"
-msgstr "Partizioak egiteko hautatuta:"
+msgstr "Yettufren i beṭṭu:"
 
 #. Type: select
 #. Description
@@ -147,15 +132,15 @@ msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
 msgstr ""
-"Diskoan hainbat eskema erabiliz egin daitezke partizioak. Ziur ez bazaude, "
-"erabili lehenengoa."
+"Aḍebsi yezmer ad yettwabḍu s useqdec n yiwen seg uzenzaɣ yemgarraden. Ma "
+"yella ur tethiqeḍ ara, fren amezwaru deg-sen."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../partman-auto.templates:11001
 msgid "Unusable free space"
-msgstr "Leku libre erabilezina"
+msgstr "Tallunt tilellit ur nettwasexdam ara"
 
 #. Type: error
 #. Description
@@ -165,8 +150,8 @@ msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
 msgstr ""
-"Huts egin du partizioak egitean, agian ezin delako aukeratutako leku librea "
-"erabili. Baliteke (lehen mailako) partizio gehiegi egotea partizio-taulan."
+"Beṭṭu yecceḍ acku tallunt tilellit yettwafernen ulamek tettuseqdac. Ahat "
+"aṭas n yiḥricen (igejdanen) i yellan deg tfelwit n uḥric."
 
 #. Type: text
 #. Description
@@ -174,7 +159,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:14001
 msgid "Guided partitioning"
-msgstr "Partizioak gidatuta egitea"
+msgstr "Beṭṭu yettuwelhen"
 
 #. Type: text
 #. Description
@@ -182,7 +167,7 @@ msgstr "Partizioak gidatuta egitea"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:15001
 msgid "Guided - use the largest continuous free space"
-msgstr "Gidatua - erabili leku libre jarraitu handiena"
+msgstr "Yettuwelleh - seqdec tallunt tilellit tahrawant yettkemmilen"
 
 #. Type: text
 #. Description
@@ -190,14 +175,14 @@ msgstr "Gidatua - erabili leku libre jarraitu handiena"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:16001
 msgid "Guided - use entire disk"
-msgstr "Gidatua - erabili disko osoa"
+msgstr "Yettuwelleh - seqdec akk aḍebsi"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:17001
 msgid "Select disk to partition:"
-msgstr "Partizioak egiteko diskoa:"
+msgstr "Fren aḍebsi i beṭṭu:"
 
 #. Type: select
 #. Description
@@ -207,8 +192,8 @@ msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"Kontutan izan hautatutako diskoko datu guztiak ezabatu egingo direla, baina "
-"ez zuk benetan aldaketa hauek egin nahi dituzula berretsi aurretik."
+"Ẓer belli meṛṛa isefka ɣef uḍebsi i tferneḍ ad ttusefḍen, maca mačči uqbel "
+"ad tesnetmeḍ belli tebɣiḍ ad tgeḍ isenfal."
 
 #. Type: text
 #. Description
@@ -217,7 +202,7 @@ msgstr ""
 #. This is a method for partioning - as in guided (automatic) versus manual
 #: ../partman-auto.templates:18001
 msgid "Manual"
-msgstr "Eskuz"
+msgstr "Awfus"
 
 #. Type: text
 #. Description
@@ -225,7 +210,7 @@ msgstr "Eskuz"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:19001
 msgid "Automatically partition the free space"
-msgstr "Automatikoki egin partizioak leku librean"
+msgstr "Beṭṭu n tallunt tilellit s wudem awurman"
 
 #. Type: text
 #. Description
@@ -233,7 +218,7 @@ msgstr "Automatikoki egin partizioak leku librean"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:20001
 msgid "All files in one partition (recommended for new users)"
-msgstr "Fitxategi guztiak partizio batean (hasiberrientzako)"
+msgstr "Meṛṛa ifuyla deg yiwen uḥric (yelha i yiseqdac imaynuten)"
 
 #. Type: text
 #. Description
@@ -241,7 +226,7 @@ msgstr "Fitxategi guztiak partizio batean (hasiberrientzako)"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:21001
 msgid "Separate /home partition"
-msgstr "Bereizitako /home partizioa"
+msgstr "Aḥric yettuɛezlen/agejan"
 
 #. Type: text
 #. Description
@@ -249,7 +234,7 @@ msgstr "Bereizitako /home partizioa"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:22001
 msgid "Separate /home, /var, and /tmp partitions"
-msgstr "Bereizitako /home, /var, eta /tmp partizioak"
+msgstr "Iḥricen yettuɛezlen /home, var/d /tmp"
 
 #. Type: text
 #. Description
@@ -257,4 +242,4 @@ msgstr "Bereizitako /home, /var, eta /tmp partizioak"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:23001
 msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr "Disko-txikiko (< 1G) partizio-eskema"
+msgstr "Azenziɣ n beṭṭu n uḍebsi ameẓẓyan (<GAṬ)"

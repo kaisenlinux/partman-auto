@@ -1,3 +1,24 @@
+partman-auto (154+kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 05 Dec 2020 18:58:26 +0200
+
+partman-auto (154) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Basque (eu.po) by Iñaki Larrañaga Murgoitio
+  * Traditional Chinese (zh_TW.po) by Walter Cheuk
+
+  [ New translations ]
+  * Kabyle (kab.po) by Slimane Selyan Amiri
+  * Occitan (oc.po) by Quentin PAGÈS
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 05 Nov 2020 18:56:22 +0100
+
 partman-auto (153+kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release
@@ -16,7 +37,7 @@ partman-auto (153) unstable; urgency=medium
 
 partman-auto (152+kaisen1) kaisen-testing; urgency=medium
 
-  * Import new upstream  
+  * Import new upstream
 
  -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Fri, 05 Jun 2020 01:00:46 +0200
 
