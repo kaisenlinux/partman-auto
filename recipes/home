@@ -5,7 +5,7 @@ partman-auto/text/home_scheme ::
 	$reusemethod{ }
 	method{ biosgrub } .
 
-512 1024 2048 ext4
+512 512 512 ext4
 	$defaultignore{ }
 	method{ format }
 	format{ }

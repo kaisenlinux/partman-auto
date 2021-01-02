@@ -6,7 +6,7 @@ partman-auto/text/atomic_scheme ::
 	method{ efi }
 	format{ } .
 
-512 1024 2048 ext4
+512 512 512 ext4
 	$defaultignore{ }
 	method{ format }
 	format{ }
