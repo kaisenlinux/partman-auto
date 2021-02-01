@@ -1,8 +1,24 @@
+partman-auto (155+kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 31 Jan 2021 17:38:19 +0200
+
+partman-auto (155) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Greek (el.po) by EG
+  * Occitan (oc.po) by Quentin PAGÈS
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 30 Dec 2020 23:47:14 +0100
+
 partman-auto (154+kaisen2) kaisen-packages; urgency=medium
 
   * Reduce /boot partition size
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 02 Dec 2021 23:08:04 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 02 Dec 2020 23:08:04 +0200
 
 partman-auto (154+kaisen1) kaisen-packages; urgency=medium
 

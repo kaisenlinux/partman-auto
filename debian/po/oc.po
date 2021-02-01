@@ -16,13 +16,14 @@ msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2020-10-11 15:47+0200\n"
-"Last-Translator: Quentin PAGÈS\n"
+"PO-Revision-Date: 2020-11-15 18:28+0000\n"
+"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. Type: text
 #. Description
@@ -91,7 +92,7 @@ msgstr ""
 "Lo programa d'installacion vos pòt ajudar pel particionament d'un disc (amb "
 "mai d'una causida d'organizacion). Tanben podètz efectuar aqueste "
 "particionament vos meteis. Se causissètz lo particionament ajudat, auretz la "
-"possibilitat de verificar e personalizar las causidas faitas."
+"possibilitat de verificar e personalizar las causidas fachas."
 
 #. Type: select
 #. Description
