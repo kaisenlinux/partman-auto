@@ -1,11 +1,11 @@
 Source: partman-auto
 Section: debian-installer
 Priority: standard
-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
-Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>, Steve McIntyre <93sam@debian.org>
+XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
-Vcs-Browser: https://salsa.debian.org/installer-team/partman-auto
-Vcs-Git: https://salsa.debian.org/installer-team/partman-auto.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/partman-auto
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/partman-auto.git
 
 Package: partman-auto
 Package-Type: udeb
