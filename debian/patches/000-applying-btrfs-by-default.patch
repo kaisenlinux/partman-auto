@@ -1,0 +1,364 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+
+--- partman-auto-156.orig/recipes-amd64-efi/atomic
++++ partman-auto-156/recipes-amd64-efi/atomic
+@@ -6,24 +6,25 @@ partman-auto/text/atomic_scheme ::
+ 	method{ efi }
+ 	format{ } .
+ 
+-512 512 768 ext2
++1024 1024 1024 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	filesystem{ ext2 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-900 10000 -1 $default_filesystem
++10000 30000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
++	options/autodefrag{ autodefrag }
++	options/nodatacow{ nodatacow }
++	options/discard{ discard }
++	options/noatime{ noatime }
++	options/nodiratime{ nodiratime }
++	options/compress{ compress=zstd }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+-
+-100% 512 200% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+--- partman-auto-156.orig/recipes-amd64-efi/home
++++ partman-auto-156/recipes-amd64-efi/home
+@@ -6,33 +6,41 @@ partman-auto/text/home_scheme ::
+ 	method{ efi }
+ 	format{ } .
+ 
+-512 512 768 ext2
++1024 1024 1024 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	filesystem{ ext2 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-1500 6000 30000 $default_filesystem
++10000 20000 40000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++        options/autodefrag{ autodefrag }
++        options/nodatacow{ nodatacow }
++        options/discard{ discard }
++        options/noatime{ noatime }
++        options/nodiratime{ nodiratime }
++        options/compress{ compress=zstd }
++        use_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+ 
+-100% 512 200% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+-
+-1000 10000 -1 $default_filesystem
++5000 10000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenHome }
++	options/autodefrag{ autodefrag }
++	options/nodatacow{ nodatacow }
++	options/discard{ discard }
++	options/noatime{ noatime }
++	options/nodiratime{ nodiratime }
++	options/compress{ compress=zstd }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ /home } .
+-
+--- partman-auto-156.orig/recipes-amd64-efi/multi
++++ partman-auto-156/recipes-amd64-efi/multi
+@@ -6,49 +6,56 @@ partman-auto/text/multi_scheme ::
+ 	method{ efi }
+ 	format{ } .
+ 
+-512 512 768 ext2
++1024 1024 1024 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	filesystem{ ext2 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-2000 3500 25000 $default_filesystem
++10000 13000 40000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
++	options/autodefrag{ autodefrag }
++	options/nodatacow{ nodatacow }
++	options/discard{ discard }
++	options/noatime{ noatime }
++	options/nodiratime{ nodiratime }
++	options/compress{ compress=zstd }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+ 
+-1000 1500 10000 $default_filesystem
++1000 1500 10000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ /var } .
+ 
+-100% 512 200% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+-
+-256 400 2000 $default_filesystem
++256 400 2000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ /tmp } .
+ 
+-4000 10000 -1 $default_filesystem
++4000 10000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
+-	use_filesystem{ }
+-	$default_filesystem{ }
++        label{ KaisenHome }
++        options/autodefrag{ autodefrag }
++        options/nodatacow{ nodatacow }
++        options/discard{ discard }
++        options/noatime{ noatime }
++        options/nodiratime{ nodiratime }
++        options/compress{ compress=zstd }
++        use_filesystem{ }
++        filesystem{ btrfs }
+ 	mountpoint{ /home } .
+-
+--- partman-auto-156.orig/recipes/atomic
++++ partman-auto-156/recipes/atomic
+@@ -1,28 +1,29 @@
+ partman-auto/text/atomic_scheme ::
+ 
+ 1 1 1 free
+-	$iflabel{ gpt }
+-	$reusemethod{ }
+-	method{ biosgrub } .
++        $iflabel{ gpt }
++        $reusemethod{ }
++        method{ biosgrub } .
+ 
+-512 512 768 ext2
+-	$defaultignore{ }
+-	method{ format }
+-	format{ }
+-	use_filesystem{ }
+-	filesystem{ ext2 }
+-	mountpoint{ /boot } .
++1024 1024 1024 btrfs
++        $defaultignore{ }
++        method{ format }
++        format{ }
++        use_filesystem{ }
++        filesystem{ btrfs }
++        mountpoint{ /boot } .
+ 
+-900 10000 -1 $default_filesystem
+-	$lvmok{ }
+-	method{ format }
+-	format{ }
+-	use_filesystem{ }
+-	$default_filesystem{ }
+-	mountpoint{ / } .
+-
+-100% 512 200% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
++10000 30000 -1 btrfs
++        $lvmok{ }
++        method{ format }
++        format{ }
++        label{ KaisenLinux }
++        options/autodefrag{ autodefrag }
++        options/nodatacow{ nodatacow }
++        options/discard{ discard }
++        options/noatime{ noatime }
++        options/nodiratime{ nodiratime }
++        options/compress{ compress=zstd }
++        use_filesystem{ }
++        filesystem{ btrfs }
++        mountpoint{ / } .
+--- partman-auto-156.orig/recipes/home
++++ partman-auto-156/recipes/home
+@@ -5,33 +5,41 @@ partman-auto/text/home_scheme ::
+ 	$reusemethod{ }
+ 	method{ biosgrub } .
+ 
+-512 512 768 ext2
++1024 1024 1024 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	filesystem{ ext2 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-1500 6000 30000 $default_filesystem
++13000 20000 40000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++        options/autodefrag{ autodefrag }
++        options/nodatacow{ nodatacow }
++        options/discard{ discard }
++        options/noatime{ noatime }
++        options/nodiratime{ nodiratime }
++        options/compress{ compress=zstd }
++        use_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+ 
+-100% 512 200% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+-
+-1000 10000 -1 $default_filesystem
++5000 10000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenHome }
++	options/autodefrag{ autodefrag }
++	options/nodatacow{ nodatacow }
++	options/discard{ discard }
++	options/noatime{ noatime }
++	options/nodiratime{ nodiratime }
++	options/compress{ compress=zstd }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ /home } .
+-
+--- partman-auto-156.orig/recipes/multi
++++ partman-auto-156/recipes/multi
+@@ -5,49 +5,56 @@ partman-auto/text/multi_scheme ::
+ 	$reusemethod{ }
+ 	method{ biosgrub } .
+ 
+-512 512 768 ext2
++1024 1024 1024 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	filesystem{ ext2 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-2000 3500 25000 $default_filesystem
++10000 13000 40000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
++	options/autodefrag{ autodefrag }
++	options/nodatacow{ nodatacow }
++	options/discard{ discard }
++	options/noatime{ noatime }
++	options/nodiratime{ nodiratime }
++	options/compress{ compress=zstd }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+ 
+-1000 1500 10000 $default_filesystem
++1000 1500 10000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
+-	use_filesystem{ }
+-	$default_filesystem{ }
++        use_filesystem{ }
++        filesystem{ btrfs }
+ 	mountpoint{ /var } .
+ 
+-100% 512 200% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+-
+-256 400 2000 $default_filesystem
++256 400 2000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ /tmp } .
+ 
+-4000 10000 -1 $default_filesystem
++4000 10000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
+-	use_filesystem{ }
+-	$default_filesystem{ }
++        label{ KaisenHome }
++        options/autodefrag{ autodefrag }
++        options/nodatacow{ nodatacow }
++        options/discard{ discard }
++        options/noatime{ noatime }
++        options/nodiratime{ nodiratime }
++        options/compress{ compress=zstd }
++        use_filesystem{ }
++        filesystem{ btrfs }
+ 	mountpoint{ /home } .
+-

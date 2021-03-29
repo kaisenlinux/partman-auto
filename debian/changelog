@@ -1,3 +1,22 @@
+partman-auto (156-1kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+  * Transform package at quilt
+  * /boot filesystem is now BTRFS by default
+  * Extend /boot partition to 1024MB
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 29 Mar 2021 16:38:41 +0200
+
+partman-auto (156) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Punjabi (Gurmukhi) (pa.po) by Aman Alam
+  * Traditional Chinese (zh_TW.po) by louies0623
+
+ -- Holger Wansing <hwansing@mailbox.org>  Fri, 19 Mar 2021 19:50:17 +0100
+
 partman-auto (155+kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release

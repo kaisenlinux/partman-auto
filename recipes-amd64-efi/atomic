@@ -6,25 +6,24 @@ partman-auto/text/atomic_scheme ::
 	method{ efi }
 	format{ } .
 
-512 512 512 ext4
+512 512 768 ext2
 	$defaultignore{ }
 	method{ format }
 	format{ }
 	use_filesystem{ }
-	filesystem{ ext4 }
+	filesystem{ ext2 }
 	mountpoint{ /boot } .
 
-10000 30000 -1 btrfs
+900 10000 -1 $default_filesystem
 	$lvmok{ }
 	method{ format }
 	format{ }
-	label{ KaisenLinux }
-	options/autodefrag{ autodefrag }
-	options/nodatacow{ nodatacow }
-	options/discard{ discard }
-	options/noatime{ noatime }
-	options/nodiratime{ nodiratime }
-	options/compress{ compress=zstd }
 	use_filesystem{ }
-	filesystem{ btrfs }
+	$default_filesystem{ }
 	mountpoint{ / } .
+
+100% 512 200% linux-swap
+	$lvmok{ }
+	$reusemethod{ }
+	method{ swap }
+	format{ } .

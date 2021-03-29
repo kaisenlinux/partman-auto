@@ -1,29 +1,28 @@
 partman-auto/text/atomic_scheme ::
 
 1 1 1 free
-        $iflabel{ gpt }
-        $reusemethod{ }
-        method{ biosgrub } .
+	$iflabel{ gpt }
+	$reusemethod{ }
+	method{ biosgrub } .
 
-512 512 512 ext4
-        $defaultignore{ }
-        method{ format }
-        format{ }
-        use_filesystem{ }
-        filesystem{ ext4 }
-        mountpoint{ /boot } .
+512 512 768 ext2
+	$defaultignore{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	filesystem{ ext2 }
+	mountpoint{ /boot } .
 
-10000 30000 -1 btrfs
-        $lvmok{ }
-        method{ format }
-        format{ }
-        label{ KaisenLinux }
-        options/autodefrag{ autodefrag }
-        options/nodatacow{ nodatacow }
-        options/discard{ discard }
-        options/noatime{ noatime }
-        options/nodiratime{ nodiratime }
-        options/compress{ compress=zstd }
-        use_filesystem{ }
-        filesystem{ btrfs }
-        mountpoint{ / } .
+900 10000 -1 $default_filesystem
+	$lvmok{ }
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	$default_filesystem{ }
+	mountpoint{ / } .
+
+100% 512 200% linux-swap
+	$lvmok{ }
+	$reusemethod{ }
+	method{ swap }
+	format{ } .

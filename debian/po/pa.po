@@ -20,15 +20,16 @@
 # Amanpreet Singh Brar <aalam@users.sf.net>, 2008.
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2008, 2009.
 # Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# A S Alam <aalam@users.sf.net>, 2009, 2012, 2014.
+# A S Alam <aalam@users.sf.net>, 2009, 2012, 2014, 2017.
+# Aman Alam <alam.yellow@gmail.com>, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2014-08-21 21:30-0500\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"PO-Revision-Date: 2021-01-18 23:32+0000\n"
+"Last-Translator: Aman Alam <alam.yellow@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -144,7 +145,8 @@ msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
 msgstr ""
-"ਡਿਸਕ ਦਾ ਪਾਰਟੀਸ਼ਨਿੰਗ ਕਈ ਵੱਖ ਵੱਖ ਸਕੀਮਾਂ ਨਾਲ ਹੋ ਸਕਦਾ ਹੈ। ਜੇ ਤੁਹਾਨੂੰ ਨਹੀਂ ਪਤਾ, ਪਹਿਲੀ ਚੁਣੋ।"
+"ਕਈ ਵੱਖਰੀਆਂ ਸਕੀਮਾਂ ਵਿੱਚੋਂ ਇੱਕ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਡਿਸਕ ਦੇ ਪਾਰਟੀਸ਼ਨ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ। ਜੇ ਤੁਹਾਨੂੰ ਪਤਾ "
+"ਨਹੀਂ ਹੈ ਤਾਂ ਪਹਿਲੇ ਨੂੰ ਚੁਣੋ।"
 
 #. Type: error
 #. Description
@@ -170,7 +172,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:14001
 msgid "Guided partitioning"
-msgstr "ਮੱਦਦ-ਪ੍ਰਾਪਤ ਪਾਰਟੀਸ਼ਨਿੰਗ"
+msgstr "ਸਹਾਇਤਾ ਨਾਲ ਪਾਰਟੀਸ਼ਨਿੰਗ"
 
 #. Type: text
 #. Description
@@ -178,7 +180,7 @@ msgstr "ਮੱਦਦ-ਪ੍ਰਾਪਤ ਪਾਰਟੀਸ਼ਨਿੰਗ"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:15001
 msgid "Guided - use the largest continuous free space"
-msgstr "ਮੱਦਦ ਪ੍ਰਾਪਤ - ਵੱਡੀ ਲਗਾਤਾਰ ਖਾਲੀ ਥਾਂ ਵਰਤੋਂ"
+msgstr "ਸਹਾਇਤਾ ਨਾਲ - ਸਭ ਤੋਂ ਵੱਡੀ ਲਗਾਤਾਰ ਖਾਲੀ ਥਾਂ ਵਰਤੋਂ"
 
 #. Type: text
 #. Description
@@ -186,7 +188,7 @@ msgstr "ਮੱਦਦ ਪ੍ਰਾਪਤ - ਵੱਡੀ ਲਗਾਤਾਰ ਖਾ
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:16001
 msgid "Guided - use entire disk"
-msgstr "ਮੱਦਦ ਪ੍ਰਾਪਤ - ਪੂਰੀ ਡਿਸਕ ਵਰਤੋਂ"
+msgstr "ਸਹਾਇਤਾ ਨਾਲ - ਪੂਰੀ ਡਿਸਕ ਵਰਤੋਂ"
 
 #. Type: select
 #. Description
@@ -229,7 +231,7 @@ msgstr "ਖਾਲੀ ਥਾਂ ਮੁਤਾਬਕ ਆਟੋਮੈਟਿਕ ਪ�
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:20001
 msgid "All files in one partition (recommended for new users)"
-msgstr "ਇੱਕ ਪਾਰਟੀਸ਼ਨ ਵਿੱਚ ਸਾਰੀਆਂ ਫਾਇਲਾਂ (ਨਵੇਂ ਯੂਜ਼ਰਾਂ ਲਈ ਸਿਫਾਰਸ਼ੀ ਹੈ)"
+msgstr "ਪਾਰਟੀਸ਼ਨ ਵਿੱਚ ਸਾਰੀਆਂ ਫਾਇਲਾਂ (ਨਵੇਂ ਵਰਤੋਂਕਾਰਾਂ ਲਈ ਸਿਫਾਰਸ਼ੀ ਹੈ)"
 
 #. Type: text
 #. Description
