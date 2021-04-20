@@ -1,8 +1,8 @@
-Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
 --- partman-auto-156.orig/recipes-amd64-efi/atomic
 +++ partman-auto-156/recipes-amd64-efi/atomic
-@@ -6,24 +6,25 @@ partman-auto/text/atomic_scheme ::
+@@ -6,24 +6,20 @@ partman-auto/text/atomic_scheme ::
  	method{ efi }
  	format{ } .
  
@@ -11,6 +11,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$defaultignore{ }
  	method{ format }
  	format{ }
++	label{ KaisenBoot }
  	use_filesystem{ }
 -	filesystem{ ext2 }
 +	filesystem{ btrfs }
@@ -22,12 +23,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	method{ format }
  	format{ }
 +	label{ KaisenLinux }
-+	options/autodefrag{ autodefrag }
-+	options/nodatacow{ nodatacow }
-+	options/discard{ discard }
-+	options/noatime{ noatime }
-+	options/nodiratime{ nodiratime }
-+	options/compress{ compress=zstd }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -40,7 +35,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 -	format{ } .
 --- partman-auto-156.orig/recipes-amd64-efi/home
 +++ partman-auto-156/recipes-amd64-efi/home
-@@ -6,33 +6,41 @@ partman-auto/text/home_scheme ::
+@@ -6,33 +6,29 @@ partman-auto/text/home_scheme ::
  	method{ efi }
  	format{ } .
  
@@ -49,6 +44,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$defaultignore{ }
  	method{ format }
  	format{ }
++	label{ KaisenBoot }
  	use_filesystem{ }
 -	filesystem{ ext2 }
 +	filesystem{ btrfs }
@@ -62,13 +58,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 +	label{ KaisenLinux }
  	use_filesystem{ }
 -	$default_filesystem{ }
-+        options/autodefrag{ autodefrag }
-+        options/nodatacow{ nodatacow }
-+        options/discard{ discard }
-+        options/noatime{ noatime }
-+        options/nodiratime{ nodiratime }
-+        options/compress{ compress=zstd }
-+        use_filesystem{ }
 +	filesystem{ btrfs }
  	mountpoint{ / } .
  
@@ -84,12 +73,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	method{ format }
  	format{ }
 +	label{ KaisenHome }
-+	options/autodefrag{ autodefrag }
-+	options/nodatacow{ nodatacow }
-+	options/discard{ discard }
-+	options/noatime{ noatime }
-+	options/nodiratime{ nodiratime }
-+	options/compress{ compress=zstd }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -97,7 +80,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 -
 --- partman-auto-156.orig/recipes-amd64-efi/multi
 +++ partman-auto-156/recipes-amd64-efi/multi
-@@ -6,49 +6,56 @@ partman-auto/text/multi_scheme ::
+@@ -6,49 +6,47 @@ partman-auto/text/multi_scheme ::
  	method{ efi }
  	format{ } .
  
@@ -106,6 +89,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$defaultignore{ }
  	method{ format }
  	format{ }
++	label{ KaisenBoot }
  	use_filesystem{ }
 -	filesystem{ ext2 }
 +	filesystem{ btrfs }
@@ -117,12 +101,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	method{ format }
  	format{ }
 +	label{ KaisenLinux }
-+	options/autodefrag{ autodefrag }
-+	options/nodatacow{ nodatacow }
-+	options/discard{ discard }
-+	options/noatime{ noatime }
-+	options/nodiratime{ nodiratime }
-+	options/compress{ compress=zstd }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -133,6 +111,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$lvmok{ }
  	method{ format }
  	format{ }
++	label{ KaisenVar }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -149,6 +128,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$lvmok{ }
  	method{ format }
  	format{ }
++	label{ KaisenTmp }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -162,19 +142,13 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 -	use_filesystem{ }
 -	$default_filesystem{ }
 +        label{ KaisenHome }
-+        options/autodefrag{ autodefrag }
-+        options/nodatacow{ nodatacow }
-+        options/discard{ discard }
-+        options/noatime{ noatime }
-+        options/nodiratime{ nodiratime }
-+        options/compress{ compress=zstd }
 +        use_filesystem{ }
 +        filesystem{ btrfs }
  	mountpoint{ /home } .
 -
 --- partman-auto-156.orig/recipes/atomic
 +++ partman-auto-156/recipes/atomic
-@@ -1,28 +1,29 @@
+@@ -1,28 +1,24 @@
  partman-auto/text/atomic_scheme ::
  
  1 1 1 free
@@ -196,6 +170,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 +        $defaultignore{ }
 +        method{ format }
 +        format{ }
++	label{ KaisenBoot }
 +        use_filesystem{ }
 +        filesystem{ btrfs }
 +        mountpoint{ /boot } .
@@ -218,18 +193,12 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 +        method{ format }
 +        format{ }
 +        label{ KaisenLinux }
-+        options/autodefrag{ autodefrag }
-+        options/nodatacow{ nodatacow }
-+        options/discard{ discard }
-+        options/noatime{ noatime }
-+        options/nodiratime{ nodiratime }
-+        options/compress{ compress=zstd }
 +        use_filesystem{ }
 +        filesystem{ btrfs }
 +        mountpoint{ / } .
 --- partman-auto-156.orig/recipes/home
 +++ partman-auto-156/recipes/home
-@@ -5,33 +5,41 @@ partman-auto/text/home_scheme ::
+@@ -5,33 +5,30 @@ partman-auto/text/home_scheme ::
  	$reusemethod{ }
  	method{ biosgrub } .
  
@@ -238,6 +207,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$defaultignore{ }
  	method{ format }
  	format{ }
++	label{ KaisenBoot }
  	use_filesystem{ }
 -	filesystem{ ext2 }
 +	filesystem{ btrfs }
@@ -251,12 +221,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 +	label{ KaisenLinux }
  	use_filesystem{ }
 -	$default_filesystem{ }
-+        options/autodefrag{ autodefrag }
-+        options/nodatacow{ nodatacow }
-+        options/discard{ discard }
-+        options/noatime{ noatime }
-+        options/nodiratime{ nodiratime }
-+        options/compress{ compress=zstd }
 +        use_filesystem{ }
 +	filesystem{ btrfs }
  	mountpoint{ / } .
@@ -273,12 +237,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	method{ format }
  	format{ }
 +	label{ KaisenHome }
-+	options/autodefrag{ autodefrag }
-+	options/nodatacow{ nodatacow }
-+	options/discard{ discard }
-+	options/noatime{ noatime }
-+	options/nodiratime{ nodiratime }
-+	options/compress{ compress=zstd }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -286,7 +244,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 -
 --- partman-auto-156.orig/recipes/multi
 +++ partman-auto-156/recipes/multi
-@@ -5,49 +5,56 @@ partman-auto/text/multi_scheme ::
+@@ -5,49 +5,47 @@ partman-auto/text/multi_scheme ::
  	$reusemethod{ }
  	method{ biosgrub } .
  
@@ -295,6 +253,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$defaultignore{ }
  	method{ format }
  	format{ }
++	label{ KaisenBoot }
  	use_filesystem{ }
 -	filesystem{ ext2 }
 +	filesystem{ btrfs }
@@ -306,12 +265,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	method{ format }
  	format{ }
 +	label{ KaisenLinux }
-+	options/autodefrag{ autodefrag }
-+	options/nodatacow{ nodatacow }
-+	options/discard{ discard }
-+	options/noatime{ noatime }
-+	options/nodiratime{ nodiratime }
-+	options/compress{ compress=zstd }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -324,6 +277,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	format{ }
 -	use_filesystem{ }
 -	$default_filesystem{ }
++	label{ KaisenVar }
 +        use_filesystem{ }
 +        filesystem{ btrfs }
  	mountpoint{ /var } .
@@ -339,6 +293,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
  	$lvmok{ }
  	method{ format }
  	format{ }
++	label{ KaisenTmp }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
@@ -352,12 +307,6 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 -	use_filesystem{ }
 -	$default_filesystem{ }
 +        label{ KaisenHome }
-+        options/autodefrag{ autodefrag }
-+        options/nodatacow{ nodatacow }
-+        options/discard{ discard }
-+        options/noatime{ noatime }
-+        options/nodiratime{ nodiratime }
-+        options/compress{ compress=zstd }
 +        use_filesystem{ }
 +        filesystem{ btrfs }
  	mountpoint{ /home } .

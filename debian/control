@@ -3,7 +3,8 @@ Section: debian-installer
 Priority: standard
 XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
-Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Build-Depends: debhelper (>= 13), dh-di, po-debconf (>= 0.5.0)
+Standards-Version: 4.5.1
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/partman-auto
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/partman-auto.git
 

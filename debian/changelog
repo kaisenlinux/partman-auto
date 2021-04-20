@@ -1,3 +1,12 @@
+partman-auto (156-2kaisen1) kaisen-testing; urgency=medium
+
+  * Refresh quilt patch to remove mountoptions (defaults options now in partman-btrfs)
+  * Update compat to 13
+  * Add Standards-Version on control file
+  * Add on patch label for boot, tmp and var partitions
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 20 Apr 2021 05:16:41 +0200
+
 partman-auto (156-1kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release
