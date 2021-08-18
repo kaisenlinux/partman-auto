@@ -1,3 +1,19 @@
+partman-auto (157-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 18 Apr 2021 22:24:32 +0200
+
+partman-auto (157) unstable; urgency=medium
+
+  [ John Paul Adrian Glaubitz ]
+  * Switch NewWorld PowerMac recipes to use a GRUB boot partition
+
+  [ Update translations ]
+  * Finnish (fi.po) by Kimmo Kujansuu
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 24 Jul 2021 05:48:12 +0200
+
 partman-auto (156-2kaisen1) kaisen-testing; urgency=medium
 
   * Refresh quilt patch to remove mountoptions (defaults options now in partman-btrfs)
