@@ -28,15 +28,19 @@
 #   Mai Hao Hui <mhh@126.com>, 2001 (translations from galeon)
 # YunQiang Su <wzssyqa@gmail.com>, 2010, 2011, 2012, 2013.
 # Yangfl <mmyangfl@gmail.com>, 2017.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019, 2020.
+# 玉堂白鹤 <yjwork@qq.com>, 2020.
+# TTT DEAL <ikmn2jlt@linshiyouxiang.net>, 2021.
+# Wenbin Lv <wenbin816@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2017-06-11 18:20+0800\n"
-"Last-Translator: Yangfl <mmyangfl@gmail.com>\n"
-"Language-Team:  <debian-l10n-chinese@lists.debian.org>\n"
+"PO-Revision-Date: 2022-04-17 17:12+0000\n"
+"Last-Translator: Wenbin Lv <wenbin816@gmail.com>\n"
+"Language-Team: <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +69,7 @@ msgstr "正在计算新分区..."
 #. :sl2:
 #: ../partman-auto.templates:3001 ../partman-auto.templates:4001
 msgid "Failed to partition the selected disk"
-msgstr "对所选磁盘分区失败"
+msgstr "对所选磁盘进行分区失败"
 
 #. Type: error
 #. Description
@@ -74,7 +78,7 @@ msgstr "对所选磁盘分区失败"
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
-msgstr "可能是因为被选的驱动器或空闲空间太小，以至于无法进行自动分区。"
+msgstr "可能是因为所选的磁盘或其空闲空间太小，以至于无法进行自动分区。"
 
 #. Type: error
 #. Description
@@ -105,8 +109,8 @@ msgid ""
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"安装程序能够指导您采用各种标准方案进行磁盘分区。如果您喜欢，也可以进行手动操"
-"作。如果选择了分区向导，稍后您还是有机会检查和修改分区设置结果。"
+"安装程序能够指导您采用各种标准方案进行磁盘分区。如果您喜欢，也可以手动进行分"
+"区。如果您选择了分区向导，稍后您还是有机会检查和修改分区结果。"
 
 #. Type: select
 #. Description
@@ -139,7 +143,7 @@ msgstr "分区方案："
 #. at the end of the sentence. Please keep it.
 #: ../partman-auto.templates:10001
 msgid "Selected for partitioning:"
-msgstr "选定要分区："
+msgstr "将要分区："
 
 #. Type: select
 #. Description
@@ -148,7 +152,8 @@ msgstr "选定要分区："
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
-msgstr "该磁盘可以使用以下数种不同方式来进行分区。如果您不确定，请选择第一个。"
+msgstr ""
+"该磁盘可以使用以下几种方案中的一种来进行分区。如果您不确定，请选择第一个。"
 
 #. Type: error
 #. Description
@@ -165,7 +170,7 @@ msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
 msgstr ""
-"分区失败的原因是无法使用所选的空闲空间。分区表中可能存在过多 (主) 分区。"
+"分区失败，原因是无法使用所选的空闲空间。分区表中可能存在过多 (主) 分区。"
 
 #. Type: text
 #. Description
@@ -206,8 +211,8 @@ msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"注意，所选磁盘上的全部数据都将被删除，但是您还是有确认是否真的要这么做的机"
-"会。"
+"注意，所选磁盘上的全部数据都将被删除，但是稍后还会要求您确认是否真的要这么"
+"做。"
 
 #. Type: text
 #. Description

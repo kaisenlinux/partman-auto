@@ -12,14 +12,14 @@
 # Nguyễn Hùng Vũ <vuhung16@bigfoot.com>, 2001.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010
 # Hai-Nam Nguyen <hainam@jcisio.com>, 2012
-# Trần Ngọc Quân <vnwildman@gmail.com>, 2018, 2019.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2018, 2019, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2019-02-27 14:34+0700\n"
+"PO-Revision-Date: 2022-07-16 14:23+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
 "Language: vi\n"
@@ -33,7 +33,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-auto.templates:1001
 msgid "Please wait..."
-msgstr "Hãy chờ…"
+msgstr "Vui lòng chờ…"
 
 #. Type: text
 #. Description
@@ -140,7 +140,7 @@ msgid ""
 "are unsure, choose the first one."
 msgstr ""
 "Đĩa này có thể được phân vùng bằng một của vài lược đồ khác. Nếu chưa chắc, "
-"bạn hãy chọn điều thứ nhất."
+"bạn hãy chọn cái thứ nhất."
 
 #. Type: error
 #. Description
@@ -199,8 +199,8 @@ msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"Ghi chú rằng mọi dữ liệu nằm trong đĩa đã chọn sẽ bị xóa hoàn toàn, nhưng "
-"chỉ sau khi bạn đã xác nhận bạn thực sư muốn làm các thay đổi đó."
+"Cần chú ý là mọi dữ liệu nằm trong đĩa đã được chọn sẽ bị tẩy sạch hoàn "
+"toàn, nhưng chỉ sau khi bạn đã xác nhận bạn thực sự muốn làm việc đó."
 
 #. Type: text
 #. Description
@@ -209,7 +209,7 @@ msgstr ""
 #. This is a method for partioning - as in guided (automatic) versus manual
 #: ../partman-auto.templates:18001
 msgid "Manual"
-msgstr "Bằng tay"
+msgstr "Thủ công"
 
 #. Type: text
 #. Description

@@ -270,10 +270,9 @@ get_auto_disks() {
 		$(mount | grep -qF "$device on /cdrom ") && continue
 
 		# Skip device mapper devices (/dev/mapper/),
-		# except for dmraid or multipath devices
+		# except for multipath devices
 		if echo $device | grep -q "^/dev/mapper/"; then
-			if [ ! -f "$dev/sataraid" ] && \
-			   ! is_multipath_dev $device; then
+			if ! is_multipath_dev $device; then
 				continue
 			fi
 		fi
