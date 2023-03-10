@@ -1,3 +1,29 @@
+partman-auto (160-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+  * Update of the 000-applying-btrfs-by-default.patch quilt patch
+  * Add the 001-applying-btrfs-by-default-efi.patch quilt patch
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 10 Mar 2023 19:30:07 +0100
+
+partman-auto (160) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 13.
+  * Set debhelper-compat version in Build-Depends.
+  * Build-Depends: Drop versioned constraint on po-debconf.
+  * Drop versioned constraint on partman-base in Depends.
+
+  [ Updated translations ]
+  * Amharic (am.po) by Danial Behzadi
+  * Asturian (ast.po) by Danial Behzadi
+  * Bengali (bn.po) by Danial Behzadi
+  * Macedonian (mk.po) by Kristijan Fremen Velkovski
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 01 Jan 2023 12:51:18 +0100
+
 partman-auto (159-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
