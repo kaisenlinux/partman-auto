@@ -1,3 +1,26 @@
+partman-auto (162-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 24 May 2023 13:50:45 +0100
+
+partman-auto (162) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Norwegian Nynorsk (nn.po) by Yngve Spjeld-Landro
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 23 May 2023 20:09:19 +0200
+
+partman-auto (161) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Polish (pl.po) by Matthaiks
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 26 Apr 2023 01:48:19 +0200
+
 partman-auto (160-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
