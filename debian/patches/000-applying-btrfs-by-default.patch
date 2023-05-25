@@ -51,14 +51,14 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
  	mountpoint{ /boot } .
  
 -1500 6000 30000 $default_filesystem
-+10000 20000 40000 btrfs
++10000 20000 30000 btrfs
  	$lvmok{ }
  	method{ format }
  	format{ }
 +	label{ KaisenLinux }
  	use_filesystem{ }
 -	$default_filesystem{ }
-+	filesystem{ btrfs }
++	filesystem{ btrfs }
  	mountpoint{ / } .
  
 -100% 512 200% linux-swap

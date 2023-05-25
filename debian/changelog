@@ -2,7 +2,7 @@ partman-auto (162-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 24 May 2023 13:50:45 +0100
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 25 May 2023 01:57:42 +0100
 
 partman-auto (162) unstable; urgency=medium
 
