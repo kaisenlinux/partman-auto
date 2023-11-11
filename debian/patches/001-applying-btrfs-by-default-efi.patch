@@ -13,7 +13,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
  	format{ } .
  
 -512 512 768 ext2
-+512 512 512 btrfs
++1024 1024 1024 btrfs
  	$defaultignore{ }
  	method{ format }
  	format{ }
@@ -52,7 +52,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
  	format{ } .
  
 -512 512 768 ext2
-+512 512 512 btrfs
++1024 1024 1024 btrfs
  	$defaultignore{ }
  	method{ format }
  	format{ }
@@ -101,7 +101,7 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
  	format{ } .
  
 -512 512 768 ext2
-+512 512 512 btrfs
++1024 1024 1024 btrfs
  	$defaultignore{ }
  	method{ format }
  	format{ }

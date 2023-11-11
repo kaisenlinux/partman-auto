@@ -19,6 +19,9 @@
 #    Developers do not need to manually edit POT or PO files.
 #
 # Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Jobava <jobaval10n@gmail.com>, 2018.
+# Andrei Popescu <andreimpopescu@gmail.com>, 2018, 2020.
+# Sergiu <adinfinitvm@wail.ch>, 2020.
 #
 # Translations from iso-codes:
 # Alastair McKinstry <mckinstry@debian.org>, 2004
@@ -36,8 +39,8 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2013-01-19 12:07+0200\n"
-"Last-Translator: Ioan Eugen Stan <stan.ieugen@gmail.com>\n"
+"PO-Revision-Date: 2023-07-08 14:50+0000\n"
+"Last-Translator: NicolaeFericitu <cni@disroot.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +54,7 @@ msgstr ""
 #. :sl1:
 #: ../partman-auto.templates:1001
 msgid "Please wait..."
-msgstr "Vă rugăm așteptați..."
+msgstr "Vă rugăm să așteptați..."
 
 #. Type: text
 #. Description
@@ -112,10 +115,10 @@ msgid ""
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"Acest program de instalare vă poate ghida prin procesul de partiționare a "
-"unui disc (folosind diverse scheme standard) sau, dacă preferați, se poate "
-"și manual. Cu unealta de ghidare, veți putea, totuși, să revizuiți și să "
-"particularizați rezultatele."
+"Programul de instalare vă poate ghida în procesul de partiționare a unui "
+"disc (folosind diferite scheme standard) sau, dacă preferați, puteți face "
+"acest lucru manual. În cazul partiționării ghidate, veți avea în continuare "
+"posibilitatea de a revizui și de a personaliza rezultatele mai târziu."
 
 #. Type: select
 #. Description
@@ -159,8 +162,8 @@ msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
 msgstr ""
-"Discul poate fi partiționat după una din următoarele scheme. Dacă nu știți "
-"exact, alegeți prima variantă."
+"Discul poate fi partiționat folosind una dintre mai multe scheme diferite. "
+"Dacă nu sunteți sigur, alegeți-o pe prima."
 
 #. Type: error
 #. Description
@@ -219,8 +222,8 @@ msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"Țineți cont că toate datele de pe discul selectat vor fi șterse, însă nu "
-"înainte să confirmați că doriți într-adevăr efectuarea schimbărilor."
+"Rețineți că toate datele de pe discul pe care îl selectați vor fi șterse, "
+"dar nu înainte de a confirma că doriți cu adevărat să efectuați modificările."
 
 #. Type: text
 #. Description

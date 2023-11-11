@@ -1,3 +1,21 @@
+partman-auto (163-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+  * Update the 000-applying-btrfs-by-default.patch and the
+    001-applying-btrfs-by-default-efi.patch
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 11 Nov 2023 16:36:52 +0100
+
+partman-auto (163) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Romanian (ro.po) by NicolaeFericitu
+  * Turkish (tr.po) by Fatih Altun
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 24 Sep 2023 11:38:45 +0200
+
 partman-auto (162-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
