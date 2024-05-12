@@ -1,3 +1,18 @@
+partman-auto (164-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 12 May 2024 20:49:14 +0200
+
+partman-auto (164) unstable; urgency=medium
+
+  * Team upload
+
+  [ Aurelien Jarno ]
+  * Add riscv64 recipes.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 07 Jan 2024 15:36:57 +0100
+
 partman-auto (163-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
