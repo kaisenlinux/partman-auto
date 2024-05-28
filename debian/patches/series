@@ -1,2 +1,3 @@
-000-applying-btrfs-by-default.patch
-001-applying-btrfs-by-default-efi.patch
+000-kaisen-deletion-of-multi-scheme.patch
+001-applying-btrfs-by-default-legacy.patch
+002-applying-btrfs-by-default-efi.patch

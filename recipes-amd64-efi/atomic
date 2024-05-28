@@ -1,25 +1,29 @@
 partman-auto/text/atomic_scheme ::
 
-128 128 128 free
+538 538 1075 free
 	$iflabel{ gpt }
 	$reusemethod{ }
 	method{ efi }
 	format{ } .
 
-1024 1024 1024 btrfs
+512 512 768 ext2
 	$defaultignore{ }
 	method{ format }
 	format{ }
-	label{ KaisenBoot }
 	use_filesystem{ }
-	filesystem{ btrfs }
+	filesystem{ ext2 }
 	mountpoint{ /boot } .
 
-10000 30000 -1 btrfs
+900 10000 -1 $default_filesystem
 	$lvmok{ }
 	method{ format }
 	format{ }
-	label{ KaisenLinux }
 	use_filesystem{ }
-	filesystem{ btrfs }
+	$default_filesystem{ }
 	mountpoint{ / } .
+
+100% 512 200% linux-swap
+	$lvmok{ }
+	$reusemethod{ }
+	method{ swap }
+	format{ } .
