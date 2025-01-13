@@ -6,7 +6,9 @@
 # Persian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# , 2005.
+# Nima Sahraneshin <unix.nima@gmail.com>, 2018.
+# Seyed Hany Hosseini <hany1894@gmail.com>, 2020.
+# <soheilkhanalipur@tutanota.com>, 2020.
 #
 # Translations from iso-codes:
 #   Alastair McKinstry - further translations from ICU-3.0
@@ -21,30 +23,116 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fa\n"
+"Project-Id-Version: fa sublevel1\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2012-10-20 19:56+0330\n"
-"Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2024-12-10 10:00+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
-#. Type: text
+#. Type: note
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
-msgid "Please wait..."
-msgstr "لطفاً صبر کنید ..."
+msgid "Help on partitioning"
+msgstr "کمک در پارتیشن‌بندی"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"پارتیشن‌بندی یک دیسک به معنی تقسیم آن به چند قسمت است تا فضای لازم برای سیستم "
+"جدید فراهم شود. شما باید انتخاب کنید که کدام پارتیشن(ها) برای نصب استفاده "
+"خواهند شد."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr "برای ایجاد پارتیشن فضای خالی را انتخاب کنید."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr ""
+"دستگاهی را انتخاب کنید تا تمام پارتیشن‌های آن حذف و یک جدول پارتیشن خالی "
+"ایجاد گردد."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"برای مشخص کردن نوع استفاده از پارتیشن در دبیان یا حذف آن، پارتیشن را انتخاب "
+"کنید. سیستم دبیان برای نصب حداقل به یک پارتیشن احتیاج دارد  تا از آن به "
+"عنوان فایل سیستم ریشه استفاده کند(فایل سیستم ریشه بر روی / بارگذاری می‌شود). "
+"بسیاری از اشخاص ترجیح میدهند یک پارتیشن swap جداگانه داشته باشند. «Swap» یک "
+"فضای خام است که به سیستم اجازه میدهد از دیسک به عنوان «virtual memory» "
+"استفاده کند."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"اگر پارتیشن فرمت شده باشد، ممکن است شما تمایل داشته باشید تا گزینه نگه داشتن "
+"و استفاده از اطلاعات موچود را انتخاب کنید.. پارتیشن‌هایی که این شرایط را "
+"دارند با علامت «${KEEP}» در منوی پارتیشن بندی اصلی نمایش داده می‌شوند."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"در حالت کلی شما یک پارتیشن را با یک فایل سیستم جدید فرمت می‌کنید. توجه: تمام "
+"اطلاعات بر روی این پارتیشن از بین خواهد رفت. اگر این پارتیشن قبلا فرمت شده "
+"باشد با علامت «${DESTROY}» در منوی اصلی پارتیشن‌بندی دیده میشود؛ در غیر این "
+"صورت با علامت  «${FORMAT}» مشخص خواهد شد."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:2001
+msgid "Please wait..."
+msgstr "لطفاً شکیبا باشید…"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
-msgstr "در حال محاسبهٔ پارتیشن جدید..."
+msgstr "محاسبهٔ افرازهای جدید…"
 
 #. Type: error
 #. Description
@@ -52,14 +140,14 @@ msgstr "در حال محاسبهٔ پارتیشن جدید..."
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "پارتیشن‌بندی دیسک انتخاب شده شکست خورد"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -70,7 +158,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -84,24 +172,23 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
-msgstr "روش پارتیشن‌بندی:"
+msgstr "روش افرازش:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"این نصاب می‌تواند پارتیشن بندی را به صورت هدایت شده و خودکار برای شما انجام "
-"دهد (با استفاده از یک ساختار استاندارد)، یا در صورتی تمایل می‌توانید به صورت "
-"دستی مراحل را پیش ببرید. در پارتیشن بندی هدایت شده شما همچنان اجازه این را "
-"خواهید داشت تا نتیجه کار را درآخر بازبینی و شخصی سازی کنید."
+"این نصب کننده می‌تواند در فرایند افرازش دیسک (استفاده کردن از طرحواره‌های "
+"استاندارد مختلف)هدایتتان کرده یا در صورت ترجیح می‌توانید دستی انجامش دهید. در "
+"افرازش هدایت شده باز هم فرصت بازبینی و سفارشی سازی نتیجه‌ها را خواهید داشت."
 
 #. Type: select
 #. Description
@@ -109,20 +196,20 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
 msgstr ""
-"در صورتی که پارتیشن بندی هدایت شده (guided partitioning) را انتخاب کنید، در "
-"ادامه اینکه کدام دیسک استفاده شود از شما پرسیده می‌شود."
+"در صورت گزینش افرازش هدایت شده برای کل دیسک، پرسیده خواهد شد که کدام دیسک "
+"استفاده شود."
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
-msgstr "شمای پارتیشن‌بندی:"
+msgstr "طرحوارهٔ افرازش:"
 
 #. Type: select
 #. Description
@@ -133,32 +220,32 @@ msgstr "شمای پارتیشن‌بندی:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
-msgstr "برای پارتیشن بندی انتخاب کنید:"
+msgstr "گزیده برای افرازش:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
 msgstr ""
-"این دیسک میتواند با استفاده از چند شمای مختلف پارتیشن‌بندی گردد. اگر در این "
-"مورد اطلاعاتی ندارید گزینهٔ اول را انتخاب کنید."
+"دیسک می‌تواند با طرحواره‌های مختلفی افرازش شود. گزینش نخستین مورد در صورت عدم "
+"اطمینان."
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "فضای آزاد غیرقابل استفاده"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -170,50 +257,50 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
-msgid "Guided partitioning"
-msgstr "پارتیشن‌بندی راهبری شده"
-
-#. Type: text
-#. Description
-#. :sl1:
-#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:15001
-msgid "Guided - use the largest continuous free space"
-msgstr "هدایت شده - از بزرگ ترین فضای خالی یکپارچه استفاده کن"
+msgid "Guided partitioning"
+msgstr "افرازش هدایت شده"
 
 #. Type: text
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:16001
-msgid "Guided - use entire disk"
-msgstr "هدایت شده - از همه دیسک استفاده کن"
-
-#. Type: select
-#. Description
-#. :sl1:
-#: ../partman-auto.templates:17001
-msgid "Select disk to partition:"
-msgstr "دیسک را برای پارتیشن بندی انتخاب کنید:"
-
-#. Type: select
-#. Description
-#. :sl1:
-#: ../partman-auto.templates:17001
-msgid ""
-"Note that all data on the disk you select will be erased, but not before you "
-"have confirmed that you really want to make the changes."
-msgstr ""
-"توجه داشته باشید که تمامی اطلاعات شما بر روی دیسک انتخابی پاک خواهد شد، "
-"بنابراین تا زمانی از انجام تغییرات مطمئن نیستید آن را تایید نکنید."
+msgid "Guided - use the largest continuous free space"
+msgstr "هدایت شده - استفاده از بزرگ ترین فضای خالی ادامه دار"
 
 #. Type: text
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:17001
+msgid "Guided - use entire disk"
+msgstr "هدایت شده - استفاده از کل دیسک"
+
+#. Type: select
+#. Description
+#. :sl1:
 #: ../partman-auto.templates:18001
+msgid "Select disk to partition:"
+msgstr "گزینش دیسک برای افرازش:"
+
+#. Type: select
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:18001
+msgid ""
+"Note that all data on the disk you select will be erased, but not before you "
+"have confirmed that you really want to make the changes."
+msgstr ""
+"همهٔ داده‌های دیسک گزیده پاک خواهد شد؛ ولی پیش از آن باید اعمال تغییرات را "
+"تأیید کنید."
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "دستی"
 
@@ -221,38 +308,46 @@ msgstr "دستی"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
-msgid "Automatically partition the free space"
-msgstr "فضای آزاد را به صورت اتوماتیک پارتیشن بندی کن"
-
-#. Type: text
-#. Description
-#. :sl1:
-#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:20001
-msgid "All files in one partition (recommended for new users)"
-msgstr "تمام فایل‌ها در یک پارتیشن (این گزینه برای تازه ماران پیشنهاد می‌شود)"
+msgid "Automatically partition the free space"
+msgstr "افرازش خودکار فضای خالی"
 
 #. Type: text
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:21001
-msgid "Separate /home partition"
-msgstr "شاخه /home مجزا"
+msgid "All files in one partition (recommended for new users)"
+msgstr "همهٔ پرونده‌ها در یک افراز (توصیه شده برای کاربران جدید)"
 
 #. Type: text
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:22001
+msgid "Separate /home partition"
+msgstr "افراز ‪/home‬ جدا"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
-msgstr "پارتیشن‌های مجزا برای /home, /var, and /tmp"
+msgstr "افرازهای ‪/home‬،‏ ‪/var‬ و ‪/tmp‬ جدا"
 
 #. Type: text
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr "شمای پارتیشن‌بندی دیسک‌کوچک (< 1GB)"
+#: ../partman-auto.templates:24001
+msgid "Small-disk (< 10GB) partitioning scheme"
+msgstr "شمای پارتیشن‌بندی دیسک‌کوچک (< 10GB)"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr "افرازهای جدا برای ‪/var‬ و ‪/srv‬. مبادله < ۱ گ‌ب (برای کارسازها)"

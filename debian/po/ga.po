@@ -11,13 +11,14 @@
 # Alastair McKinstry <mckinstry@computer.org>, 2001,2002
 # Free Software Foundation, Inc., 2001,2003
 # Kevin Patrick Scannell <scannell@SLU.EDU>, 2004, 2008, 2009, 2011.
+# Kevin Scannell <kscanne@gmail.com>, 2023.
 # Sean V. Kelley <s_oceallaigh@yahoo.com>, 1999
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2006-03-21 14:42-0500\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2023-04-24 19:41-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "Language: ga\n"
@@ -25,17 +26,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Type: text
+#. Type: note
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
+msgid "Help on partitioning"
+msgstr "Cabhair le deighilt"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"Is éard atá i gceist nuair a dhéanann tú deighilt ar thiomántán crua ná é a "
+"roinnt sa chaoi go mbeidh go leor spáis air chun do chóras nua a shuiteáil.  "
+"Ní mór duit cé acu deighiltí is mian leat a úsáid le haghaidh na suiteála."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr "Roghnaigh spás saor chun deighiltí a chruthú ann."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr ""
+"Roghnaigh gléas chun gach deighilt a bhaint uaidh agus tábla nua folamh "
+"deighilte a chruthú air."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"Roghnaigh deighilt chun í a bhaint amach, nó le sonrú conas ba mhaith leat é "
+"a úsáid.  Tá deighilt amháin de dhíth ort ar a laghad, a gcuirfear fréamh an "
+"chórais comhad uirthi (le pointe feistithe /).  Ceapann formhór daoine go "
+"bhfuil deighilt bhabhtála de dhíth freisin.  Ceadaíonn an deighilt bhabhtála "
+"don chóras an diosca a úsáid mar \"cuimhne fhíorúil\"."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"Nuair atá an deighilt formáidithe cheana, is féidir leat na sonraí atá ann a "
+"chaomhnú agus a úsáid.  Marcálfar na deighiltí a úsáidfear sa chaoi seo le "
+"\"${KEEP}\" sa phríomh-roghchlár deighilte."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"Go ginearálta, b'fhearr leat an deighilt a fhormáidiú le córas comhad "
+"nuadhéanta. NÓTA: Scriosfar na sonraí go léir ar an deighilt seo go brách.  "
+"Má shocraíonn tú deighilt a fhormáidiú atá formáidithe cheana féin, "
+"marcálfar é le \"${DESTROY}\" sa phríomh-roghchlár deighilte.  I ngach cás "
+"eile marcálfar é le \"${FORMAT}\"."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:2001
 msgid "Please wait..."
 msgstr "Fan go fóill, le do thoil..."
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:2001
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
 msgstr "Deighiltí nua á n-áireamh..."
 
@@ -45,14 +131,14 @@ msgstr "Deighiltí nua á n-áireamh..."
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "Theip ar an diosca roghnaithe a dheighilt"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -63,7 +149,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -77,14 +163,14 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
 msgstr "Modh deighilte:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
@@ -102,7 +188,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
@@ -113,7 +199,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
 msgstr "Scéim dheighilte:"
 
@@ -126,14 +212,14 @@ msgstr "Scéim dheighilte:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
 msgstr "Roghnaithe le deighilt:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
@@ -144,14 +230,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "Spás saor do-úsáidte"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -163,7 +249,7 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
+#: ../partman-auto.templates:15001
 msgid "Guided partitioning"
 msgstr "Deighilt treoraithe"
 
@@ -171,7 +257,7 @@ msgstr "Deighilt treoraithe"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:15001
+#: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
 msgstr "Treoraithe - úsáid an spás saor leanúnach is mó"
 
@@ -179,21 +265,21 @@ msgstr "Treoraithe - úsáid an spás saor leanúnach is mó"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:16001
+#: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
 msgstr "Treoraithe - úsáid an diosca ina iomláine"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
 msgstr "Roghnaigh diosca le deighilt:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
@@ -205,8 +291,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
-#: ../partman-auto.templates:18001
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "De Láimh"
 
@@ -214,7 +300,7 @@ msgstr "De Láimh"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
+#: ../partman-auto.templates:20001
 msgid "Automatically partition the free space"
 msgstr "Deighil an spás saor go huathoibríoch"
 
@@ -222,7 +308,7 @@ msgstr "Deighil an spás saor go huathoibríoch"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:20001
+#: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
 msgstr "Gach comhad in aon deighilt (molta d'úsáideoirí nua)"
 
@@ -230,7 +316,7 @@ msgstr "Gach comhad in aon deighilt (molta d'úsáideoirí nua)"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:21001
+#: ../partman-auto.templates:22001
 msgid "Separate /home partition"
 msgstr "Deighilt /home ar leith"
 
@@ -238,7 +324,7 @@ msgstr "Deighilt /home ar leith"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:22001
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
 msgstr "Deighiltí /home, /var, agus /tmp ar leith"
 
@@ -246,6 +332,14 @@ msgstr "Deighiltí /home, /var, agus /tmp ar leith"
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr "Scéim dheighilte do dhiosca beag (< 1GB)"
+#: ../partman-auto.templates:24001
+msgid "Small-disk (< 10GB) partitioning scheme"
+msgstr "Scéim dheighilte do dhiosca beag (< 10GB)"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr ""

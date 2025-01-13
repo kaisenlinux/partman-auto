@@ -1,3 +1,34 @@
+Template: partman-auto/help
+Type: note
+# :sl1:
+#flag:translate!:8
+_Description: Help on partitioning
+ Partitioning a hard drive consists of dividing it to create the space
+ needed to install your new system.  You need to choose which
+ partition(s) will be used for the installation.
+ .
+ Select a free space to create partitions in it.
+ .
+ Select a device to remove all partitions in it and create a new empty
+ partition table.
+ .
+ Select a partition to remove it or to specify how it should be used.
+ At a bare minimum, you need one partition to contain the root of the
+ file system (whose mount point is /).  Most people also feel that a
+ separate swap partition is a necessity.  "Swap" is scratch space for an
+ operating system, which allows the system to use disk storage as
+ "virtual memory".
+ .
+ When the partition is already formatted you may choose to keep and
+ use the existing data in the partition.  Partitions that will be used
+ in this way are marked with "${KEEP}" in the main partitioning menu.
+ .
+ In general you will want to format the partition with a newly created
+ file system.  NOTE: all data in the partition will be irreversibly
+ deleted.  If you decide to format a partition that is already
+ formatted, it will be marked with "${DESTROY}" in the main
+ partitioning menu.  Otherwise it will be marked with "${FORMAT}".
+
 Template: partman-auto/progress/title
 Type: text
 # :sl1:
@@ -35,6 +66,7 @@ _Description: Partitioning method:
  .
  If you choose guided partitioning for an entire disk, you will next be
  asked which disk should be used.
+Help: partman-auto/help
 
 Template: partman-auto/disk
 Type: string
@@ -48,14 +80,12 @@ Description: for internal use; can be preseeded
 
 Template: partman-auto/cap-ram
 Type: string
-Default: 1024
+Default: false
 Description: for internal use; can be preseeded
  Cap RAM size to specified size in MB, when calculating the swap
- partition size. Defaults to 1024, meaning 1GB, and since swap is
- maximum 200% of RAM in the default recipes, it results in swap
- partitions to be capped at 2GB. To revert to previous behaviour of
- uncapped swap size with respect to available ram, preseed this key to
- any string, e.g. partman-auto/cap-ram=false
+ partition size. By default this is disabled, so swap size is not capped,
+ while preseeding to a value of 1024 (with partman-auto/cap-ram=1024) for
+ example results in swap partitions to be capped at 1GB.
 
 Template: partman-auto/automatically_partition
 Type: select
@@ -86,6 +116,7 @@ _Description: Partitioning scheme:
  .
  The disk can be partitioned using one of several different schemes.
  If you are unsure, choose the first one.
+Help: partman-auto/help
 
 Template: partman-auto/unusable_space
 Type: error
@@ -137,7 +168,7 @@ Template: partman-auto/text/custom_partitioning
 Type: text
 # :sl1:
 # TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-# This is a method for partioning - as in guided (automatic) versus manual
+# This is a method for partitioning - as in guided (automatic) versus manual
 _Description: Manual
 
 Template: partman-auto/text/auto_free_space
@@ -158,8 +189,20 @@ Type: text
 # TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 _Description: Separate /home partition
 
+Template: partman-auto/text/multi_scheme
+Type: text
+# :sl1:
+# TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+_Description: Separate /home, /var, and /tmp partitions
+
 Template: partman-auto/text/small_disk
 Type: text
 # :sl2:
 # TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-_Description: Small-disk (< 1GB) partitioning scheme
+_Description: Small-disk (< 10GB) partitioning scheme
+
+Template: partman-auto/text/server_scheme
+Type: text
+# :sl1:
+# TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+_Description: Separate /var and /srv, swap < 1GB (for servers)

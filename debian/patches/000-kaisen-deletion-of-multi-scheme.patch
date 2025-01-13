@@ -1,14 +1,42 @@
 Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
---- partman-auto-164.orig/recipes-amd64-efi/_numbers
-+++ partman-auto-164/recipes-amd64-efi/_numbers
-@@ -1,3 +1,2 @@
+--- partman-auto-173.orig/recipes-amd64-efi/_numbers
++++ partman-auto-173/recipes-amd64-efi/_numbers
+@@ -1,5 +1,2 @@
  30 atomic
  50 home
 -80 multi
---- partman-auto-164.orig/recipes/_numbers
-+++ partman-auto-164/recipes/_numbers
-@@ -1,3 +1,2 @@
+-90 server
+-95 small_disk
+--- partman-auto-173.orig/recipes-amd64/_numbers
++++ partman-auto-173/recipes-amd64/_numbers
+@@ -1,5 +1,2 @@
  30 atomic
  50 home
 -80 multi
+-90 server
+-95 small_disk
+--- partman-auto-173.orig/recipes-arm64-efi/_numbers
++++ partman-auto-173/recipes-arm64-efi/_numbers
+@@ -1,5 +1,2 @@
+ 30 atomic
+ 50 home
+-80 multi
+-90 server
+-95 small_disk
+--- partman-auto-173.orig/recipes-arm64/_numbers
++++ partman-auto-173/recipes-arm64/_numbers
+@@ -1,5 +1,2 @@
+ 30 atomic
+ 50 home
+-80 multi
+-90 server
+-95 small_disk
+--- partman-auto-173.orig/recipes/_numbers
++++ partman-auto-173/recipes/_numbers
+@@ -1,5 +1,2 @@
+ 30 atomic
+ 50 home
+-80 multi
+-90 server
+-95 small_disk

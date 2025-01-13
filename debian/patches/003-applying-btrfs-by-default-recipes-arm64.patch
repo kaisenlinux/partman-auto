@@ -1,70 +1,63 @@
 Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
---- partman-auto-164.orig/recipes-amd64-efi/atomic
-+++ partman-auto-164/recipes-amd64-efi/atomic
-@@ -1,29 +1,25 @@
- partman-auto/text/atomic_scheme ::
+--- partman-auto-173.orig/recipes-arm64/atomic
++++ partman-auto-173/recipes-arm64/atomic
+@@ -3,26 +3,19 @@ partman-auto/text/atomic_scheme ::
+ 18 18 18 free
+ 	$primary{ } .
  
--538 538 1075 free
-+128 128 128 free
- 	$iflabel{ gpt }
- 	$reusemethod{ }
- 	method{ efi }
- 	format{ } .
- 
--512 512 768 ext2
+-768 788 1024 ext4
+-	$primary{ }
+-	$bootable{ }
+-	$legacy_boot{ }
 +2048 2048 2048 btrfs
- 	$defaultignore{ }
  	method{ format }
  	format{ }
-+	label{ KaisenBoot }
++	label { KaisenBoot }
  	use_filesystem{ }
--	filesystem{ ext2 }
+-	filesystem{ ext4 }
 +	filesystem{ btrfs }
  	mountpoint{ /boot } .
  
--900 10000 -1 $default_filesystem
+-8000 8850 -1 $default_filesystem
 +900 10000 -1 btrfs
  	$lvmok{ }
+-	$primary{ }
  	method{ format }
  	format{ }
-+	label{ KaisenLinux }
++	label { KaisenLinux }
  	use_filesystem{ }
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
  	mountpoint{ / } .
 -
--100% 512 200% linux-swap
+-500 550 100% linux-swap
 -	$lvmok{ }
--	$reusemethod{ }
 -	method{ swap }
 -	format{ } .
---- partman-auto-164.orig/recipes-amd64-efi/home
-+++ partman-auto-164/recipes-amd64-efi/home
-@@ -1,38 +1,34 @@
- partman-auto/text/home_scheme ::
+--- partman-auto-173.orig/recipes-arm64/home
++++ partman-auto-173/recipes-arm64/home
+@@ -3,34 +3,28 @@ partman-auto/text/home_scheme ::
+ 18 18 18 free
+ 	$primary{ } .
  
--538 538 1075 free
-+128 128 128 free
- 	$iflabel{ gpt }
- 	$reusemethod{ }
- 	method{ efi }
- 	format{ } .
- 
--512 512 768 ext2
+-768 788 1024 ext4
+-	$primary{ }
+-	$bootable{ }
+-	$legacy_boot{ }
 +2048 2048 2048 btrfs
- 	$defaultignore{ }
  	method{ format }
  	format{ }
 +	label{ KaisenBoot }
  	use_filesystem{ }
--	filesystem{ ext2 }
+-	filesystem{ ext4 }
 +	filesystem{ btrfs }
  	mountpoint{ /boot } .
  
--1500 6000 30000 $default_filesystem
+-7500 7550 100000 $default_filesystem
 +1500 6000 30000 btrfs
  	$lvmok{ }
+-	$primary{ }
  	method{ format }
  	format{ }
 +	label{ KaisenLinux }
@@ -73,13 +66,12 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 +	filesystem{ btrfs }
  	mountpoint{ / } .
  
--100% 512 200% linux-swap
+-500 550 100% linux-swap
 -	$lvmok{ }
--	$reusemethod{ }
 -	method{ swap }
 -	format{ } .
 -
--1000 10000 -1 $default_filesystem
+-1000 1800 -1 $default_filesystem
 +1000 10000 -1 btrfs
  	$lvmok{ }
  	method{ format }
@@ -89,4 +81,3 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 -	$default_filesystem{ }
 +	filesystem{ btrfs }
  	mountpoint{ /home } .
--

@@ -10,6 +10,7 @@
 # Translators:
 # shashi kiran <shashi859@gmail.com>, 2010, 2011.
 # Prabodh CP <prabodhcp@gmail.com>, 2011.
+# Yogesh <yogesh@karnatakaeducation.org.in>, 2020.
 #
 # Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
 #
@@ -20,26 +21,112 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2013-09-30 16:17+0530\n"
-"Last-Translator: Prabodh C P (FSMK Localisation Team) <prabodh@fsmk.org>\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2020-07-21 17:24+0000\n"
+"Last-Translator: Yogesh <yogesh@karnatakaeducation.org.in>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
 "Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Help on partitioning"
+msgstr "ವಿಭಜನೆ ಪ್ರಕ್ರಿಯೆಗೆ ಸಹಾಯ"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"ಹಾರ್ಡ್ ಡ್ರೈವನ್ನು ವಿಭಜಿಸುವ ಕಾರ್ಯದಲ್ಲಿ ಅದನ್ನು ನಿಮ್ಮ ಹೊಸ ವ್ಯವಸ್ಥೆಗೆ ಬೇಕಾದ ಜಾಗಕ್ಕಾಗಿ ವಿಭಾಗ "
+"ಮಾಡುವ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಒಳಗೊಂಡಿದೆ. ಅನುಸ್ಥಾಪನೆಗೆ ಯಾವ ವಿಭಜನೆ(ಗಳು) ಬಳಸಬೇಕೆಂದು ನೀವು "
+"ಆಯ್ಕೆ ಮಾಡಬೇಕು."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr "ವಿಭಾಗಗಳನ್ನು ರಚಿಸಲು ಮುಕ್ತ ಸ್ಥಳವನ್ನು ಆಯ್ದುಕೊಳ್ಳಿ"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr ""
+"ಉಪಕರಣದ ಎಲ್ಲ ವಿಭಜನೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ನಂತರ ಒಂದು ಖಾಲಿ ವಿಭಜನ ಕೋಷ್ಠಕವನ್ನು ಸೃಷ್ಠಿ ಮಾಡಲು "
+"ಒಂದು ಉಪಕರಣವನ್ನು ಆಯ್ಕೆಮಾಡಿ "
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"ಒಂದು ವಿಭಜನೆಯನ್ನು, ತೆಗೆಯಲು ಅಥವಾ ಅದನ್ನು ಹೇಗೆ ಬಳಸಬೇಕೆಂದು ಹೇಳಲು, ಆಯ್ಕೆ ಮಾಡಿ. ಕನಿಷ್ಠ್ "
+"ಪಕ್ಷದಲ್ಲಿ ಕಡತ ವ್ಯವಸ್ಥೆಯ ಮೂಲವನ್ನು(ಯಾವುದರ ಏರು ಬಿಂದು /ಯಾಗಿದೆಯೋ) ಸಂಗ್ರಹಿಸಲು ನಿಮಗೆ ಒಂದು "
+"ವಿಭಜನೆಯಾದರೂ ಬೇಕು. ಹೆಚ್ಚಿನ ಜನ ಒಂದು ಪ್ರತ್ಯೇಕ ಸ್ವಾಪ್ ವಿಭಜನೆಯು ಅಗತ್ಯವೆಂದು ಭಾವಿಸುವರು. "
+"\"Swap\" ಎಂಬುದು ಕಾರ್ಯವ್ಯವಸ್ಥೆಯ ತಾತ್ಕಾಲಿಕವಾಗಿ ಶೇಖರಿಸುವ ಜಾಗ, ಇದರಿಂದಾಗಿ ಗಣಕ "
+"ವ್ಯವಸ್ಥೆಯು ಡಿಸ್ಕ್ ಸಂಗ್ರಹಣೆಯನ್ನು \"virtual memory\"ಯಾಗಿ ಬಳಸಬಹುದು."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"ಒಂದು ವಿಭಜನೆಯು ಆಗಲೇ ಸಿದ್ಧವಾಗಿದ್ದರೆ, ಅದರಲ್ಲಿರುವ ಮಾಹಿತಿಯನ್ನು ಹಾಗೆ ಇಟ್ಟುಕೊಂಡು "
+"ಬಳಸುವಂತೆ ನೀವು ಆಯ್ಕೆ ಮಾಡಬಹುದು. ಹೀಗೆ ಬಳಸಲಾಗುವ ವಿಭಜನೆಗಳನ್ನು \"${KEEP}\" ಎಂದು ಮುಖ್ಯ "
+"ವಿಭಜನ ಆಯ್ಕೆಪಟ್ಟಿಯಲ್ಲಿ ಗುರುತಿಸಲಾಗುವುದು."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"ಸಾಮನ್ಯವಾಗಿ ನೀವು ಒಂದು ವಿಭಜನೆಯನ್ನು ಹೊಸದೊಂದು ಕಡತ ವ್ಯವಸ್ಥೆಯೊಂದಿಗೆ ಸಿದ್ಧಪಡಿಸಲು "
+"ಇಚ್ಛಿಸುತ್ತೀರಿ. ಸೂಚನೆ: ಈ ವಿಭಜನೆಯಲ್ಲಿರುವ ಎಲ್ಲ ಮಾಹಿತಿಯನ್ನು ಪೂರ್ವಾವಸ್ಥೆಗೆ ತರಲಾಗದಂತೆ ನಾಶ "
+"ಮಾಡಲಾಗುವುದು. ನೀವು ಆಗಲೇ ಸಿದ್ಧಪಡಿಸಿದ ವಿಭಜನೆಯನ್ನು ಮತ್ತೆ ಸಿದ್ಧ ಪಡಿಸಲು ತೀರ್ಮಾನಿಸಿದರೆ, "
+"ಅದನ್ನು ಮುಖ್ಯ ವಿಭಜನ ಆಯ್ಕೆಪಟ್ಟಿಯಲ್ಲಿ \"${DESTROY}\" ಎಂದು ಗುರುತು ಹಾಕಲಾಗುತ್ತದೆ. "
+"ಇಲ್ಲವಾದಲ್ಲಿ \"${FORMAT}\" ಎಂದು ಗುರುತು ಹಾಕಲಾಗುತ್ತದೆ."
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:1001
+#: ../partman-auto.templates:2001
 msgid "Please wait..."
 msgstr "ದಯವಿಟ್ಟು ಕಾಯಿರಿ"
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:2001
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
 msgstr "ಹೊಸ ವಿಭಜನೆಗಳನ್ನು ಲೆಕ್ಕ ಹಾಕಲಾಗುತ್ತಿದೆ"
 
@@ -49,14 +136,14 @@ msgstr "ಹೊಸ ವಿಭಜನೆಗಳನ್ನು ಲೆಕ್ಕ ಹಾಕ
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "ಆಯ್ದುಕೊಂಡ ಡಿಸ್ಕನ್ನು ವಿಭಜಿಸುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ."
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -67,7 +154,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -80,14 +167,14 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
 msgstr "ವಿಭಜನಾ ವಿಧಾನ"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
@@ -103,7 +190,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
@@ -114,7 +201,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
 msgstr "ವಿಭಜನಾ ವಿಧಾನ:"
 
@@ -127,14 +214,14 @@ msgstr "ವಿಭಜನಾ ವಿಧಾನ:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
 msgstr "ವಿಭಾಗಿಸುವುದಕ್ಕೆ ಆರಿಸಲಾಗಿದೆ"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
@@ -145,14 +232,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "ಉಪಯುಕ್ತವಲ್ಲದ ಮುಕ್ತ ಸ್ಥಳ"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -164,7 +251,7 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
+#: ../partman-auto.templates:15001
 msgid "Guided partitioning"
 msgstr "ಮಾರ್ಗದರ್ಶಿ ವಿಭಜನಾ ಪ್ರಕ್ರಿಯೆ"
 
@@ -172,7 +259,7 @@ msgstr "ಮಾರ್ಗದರ್ಶಿ ವಿಭಜನಾ ಪ್ರಕ್ರಿ�
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:15001
+#: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
 msgstr "ಮಾರ್ಗದರ್ಶಿ ವಿಧಾನ - ಅತಿ ದೊಡ್ಡ  ಸತತವಾಗಿ ಲಭ್ಯವಿರುವ ಖಾಲಿ ಜಾಗವನ್ನು ಬಳಸಿ"
 
@@ -180,21 +267,21 @@ msgstr "ಮಾರ್ಗದರ್ಶಿ ವಿಧಾನ - ಅತಿ ದೊಡ್�
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:16001
+#: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
 msgstr "ಮಾರ್ಗದರ್ಶಿತ - ಇಡೀ ಡಿಸ್ಕನ್ನು ಬಳಸಿ"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
 msgstr "ವಿಭಜಿಸಲು ಡಿಸ್ಕನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
@@ -206,8 +293,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
-#: ../partman-auto.templates:18001
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "ಕೈಯಾರೆ"
 
@@ -215,7 +302,7 @@ msgstr "ಕೈಯಾರೆ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
+#: ../partman-auto.templates:20001
 msgid "Automatically partition the free space"
 msgstr "ಮುಕ್ತ ಸ್ಥಳವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ವಿಭಜಿಸುವುದು"
 
@@ -223,7 +310,7 @@ msgstr "ಮುಕ್ತ ಸ್ಥಳವನ್ನು ಸ್ವಯಂಚಾಲಿ�
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:20001
+#: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
 msgstr "ಎಲ್ಲ ಕಡತಗಳು ಒಂದೇ ವಿಭಜನೆಯಲ್ಲಿ (ಹೊಸ ಬಳಕೆದಾರರಿಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ)"
 
@@ -231,7 +318,7 @@ msgstr "ಎಲ್ಲ ಕಡತಗಳು ಒಂದೇ ವಿಭಜನೆಯಲ್
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:21001
+#: ../partman-auto.templates:22001
 msgid "Separate /home partition"
 msgstr "/home ವಿಭಜನೆಯನ್ನು ಬೇರ್ಪಡಿಸಿ"
 
@@ -239,7 +326,7 @@ msgstr "/home ವಿಭಜನೆಯನ್ನು ಬೇರ್ಪಡಿಸಿ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:22001
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
 msgstr "/home, /var ಮತ್ತು /tmp ವಿಭಜನೆಗಳನ್ನು ಬೇರ್ಪಡಿಸಿ"
 
@@ -247,6 +334,15 @@ msgstr "/home, /var ಮತ್ತು /tmp ವಿಭಜನೆಗಳನ್ನು �
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
+#: ../partman-auto.templates:24001
+#, fuzzy
+msgid "Small-disk (< 10GB) partitioning scheme"
 msgstr "ಚಿಕ್ಕ ಡಿಸ್ಕ್ ( ೧ ಜಿಬಿಗಿಂತ ಕಡಿಮೆಯ) ವಿಭಜನ ಕ್ರಮ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr ""

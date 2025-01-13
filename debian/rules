@@ -23,5 +23,9 @@ override_dh_link:
 endif
 
 execute_after_dh_di_numbers:
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes/multi
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-amd64-efi/multi
+	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)/multi
+	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)/server
+	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)/small_disk
+	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)-efi/multi
+	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)-efi/server
+	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)-efi/small_disk

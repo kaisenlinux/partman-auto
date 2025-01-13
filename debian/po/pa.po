@@ -26,9 +26,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2021-01-18 23:32+0000\n"
-"Last-Translator: Aman Alam <alam.yellow@gmail.com>\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2024-11-19 09:29+0000\n"
+"Last-Translator: Aman Alam <aalam@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
@@ -36,17 +36,98 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. Type: text
+#. Type: note
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
+msgid "Help on partitioning"
+msgstr "ਪਾਰਟੀਸ਼ਨਿੰਗ ਲਈ ਮੱਦਦ"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"ਹਾਰਡ ਡਰਾਈਵ ਦੇ ਪਾਰਟੀਸ਼ਨਿੰਗ ਵਿੱਚ ਤੁਹਾਡਾ ਨਵਾਂ ਸਿਸਟਮ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਲੋੜੀਂਦੀ ਥਾਂ ਬਣਾਉਣ ਲਈ ਇਸ "
+"ਨੂੰ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ। ਤੁਹਾਨੂੰ ਚੁਣਨਾ ਪਵੇਗਾ ਕਿ ਕਿਹੜੇ ਪਾਰਟੀਸ਼ਨ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਵਰਤਣਾ ਹੈ।"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr "ਪਾਰਟੀਸ਼ਨ ਬਣਾਉਣ ਲਈ ਖਾਲੀ ਥਾਂ ਚੁਣੋ।"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr "ਸਾਰੇ ਪਾਰਟੀਸ਼ਨ ਹਟਾਉਣ ਲਈ ਡਿਵਾਈਸ ਚੁਣੋ ਅਤੇ ਨਵੀਂ ਖਾਲੀ ਪਾਰਟੀਸ਼ਨ ਟੇਬਲ ਬਣਾਓ।"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"ਹਟਾਉਣ ਲਈ ਪਾਰਟੀਸ਼ਨ ਚੁਣੋ ਜਾਂ ਦਰਸਾਓ ਕਿ ਨ ਇਸ ਨੂੰ ਕਿ ਤਰਾਂ ਵਣਾ ਹੈਤੇ। ਘੱਟੋ-ਘੱਟ ਤੁਹਾਨੂੰ ਨੂੰ ਇੱਕ "
+"ਪਾਰਟੀਸ਼ਨ ਦੀ ਲੋੜ ਹੈ ਜਿਸ ਉੱਤੇ ਫਾਇਲ ਸਿਸਟਮ ਦਾ root (ਜਿਸ ਦਾ ਮਾਊਂਟ ਪੁਆਂਇਟ / ਹੈ) ਸ਼ਾਮਲ ਹੁੰਦਾ ਹੈ। "
+"ਜਿਆਦਾ ਲੋਕ ਅਜਿਹਾ ਮਹਿਸੂਸ ਕਰਦੇ ਹਨ ਵੱਖਰਾ ਕਿ ਸਵੈਪ ਪਾਰਟੀਸ਼ਨ ਜਰੂਰੀ ਹੈ। \"Swap\" ਓਪਰੇਟਿੰਗ "
+"ਸਿਸਟਮ ਲਈ ਇੱਕ ਆਰੰਭ ਥਾਂ ਹੈ, ਜੋ ਸਿਸਟਮ ਨੂੰ ਡਿਸਕ ਭੰਡਾਰ ਨੂੰ \"virtual memory\" ਤੌਰ ਤੇ ਵਰਤਣ ਦੀ "
+"ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"ਜਦੋਂ ਪਾਰਟੀਸ਼ਨ ਪਹਿਲਾਂ ਹੀ ਫਾਰਮੈਟ ਕੀਤਾ ਹੁੰਦਾ ਹੈ ਤੁਸੀਂ ਭਾਗ ਵਿਚਲਾ ਮੌਜੂਦ ਡਾਟਾ ਰੱਖਣ ਅਤੇ ਵਰਤਣ ਲਈ "
+"ਚੁਣ ਸਕਦੇ ਹੋ। ਪਾਰਟੀਸ਼ਨ, ਜੋ ਇਸ ਤਰੀਕੇ ਨਾਲ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਨੂੰ ਮੁੱਖ ਪਾਰਟੀਸ਼ਨਿੰਗ ਸੂਚੀ ਵਿੱਚ "
+"\"${KEEP}\" ਨਾਲ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ।"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"ਆਮ ਤੌਰ ਤੇ ਤੁਸੀਂ ਨਵੇਂ ਬਣੇ ਫਾਇਲ ਸਿਸਟਮ ਨਾਲ ਭਾਗ ਨੂੰ ਫਾਰਮੈਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ। ਟਿੱਪਣੀ: ਭਾਗ ਵਿੱਚਲਾ "
+"ਸਾਰਾ ਡਾਟਾ ਹਟਾਇਆ ਜਾਵੇਗਾ। ਜੇ ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਫਾਰਮੈਟ ਕੀਤੇ ਭਾਗ ਨੂੰ ਫਾਰਮੈਟ ਕਰਨ ਦਾ ਫੈਸਲਾ "
+"ਕੀਤਾ, ਇਹ ਮੁੱਖ ਪਾਰਟੀਸ਼ਨਿੰਗ ਸੂਚੀ ਵਿਚ \"${DESTROY}\" ਨਾਲ ਦਰਸਾਈ ਜਾਵੇਗੀ। ਨਹੀਂ ਤਾਂ ਇਹ "
+"\"${FORMAT}\" ਨਾਲ ਦਰਸਾਈ ਜਾਵੇਗੀ।"
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:2001
 msgid "Please wait..."
 msgstr "ਉਡੀਕੋ ਜੀ..."
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:2001
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
 msgstr "ਨਵੇਂ ਪਾਰਟੀਸ਼ਨਾਂ ਦੀ ਗਣਨਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ..."
 
@@ -56,14 +137,14 @@ msgstr "ਨਵੇਂ ਪਾਰਟੀਸ਼ਨਾਂ ਦੀ ਗਣਨਾ ਕੀ�
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "ਚੁਣੀ ਡਿਸਕ ਦੇ ਪਾਰਟੀਸ਼ਨਿੰਗ ਵਿੱਚ ਅਸਫਲ"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -73,7 +154,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -85,14 +166,14 @@ msgstr "ਇਹ ਤਾਂ ਹੀ ਵਾਪਰਿਆ ਹੈ, ਕਿਉਂਕਿ �
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
 msgstr "ਪਾਰਟੀਸ਼ਨਿੰਗ ਢੰਗ:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
@@ -109,7 +190,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
@@ -120,7 +201,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
 msgstr "ਪਾਰਟੀਸ਼ਨਿੰਗ ਸਕੀਮ:"
 
@@ -133,14 +214,14 @@ msgstr "ਪਾਰਟੀਸ਼ਨਿੰਗ ਸਕੀਮ:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
 msgstr "ਪਾਰਟੀਸ਼ਨਿੰਗ ਬਣਾਉਣ ਲਈ ਚੁਣਿਆ:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
@@ -151,14 +232,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "ਗ਼ੈਰ-ਵਰਤਣ-ਯੋਗ ਖਾਲੀ ਥਾਂ"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -170,7 +251,7 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
+#: ../partman-auto.templates:15001
 msgid "Guided partitioning"
 msgstr "ਸਹਾਇਤਾ ਨਾਲ ਪਾਰਟੀਸ਼ਨਿੰਗ"
 
@@ -178,7 +259,7 @@ msgstr "ਸਹਾਇਤਾ ਨਾਲ ਪਾਰਟੀਸ਼ਨਿੰਗ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:15001
+#: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
 msgstr "ਸਹਾਇਤਾ ਨਾਲ - ਸਭ ਤੋਂ ਵੱਡੀ ਲਗਾਤਾਰ ਖਾਲੀ ਥਾਂ ਵਰਤੋਂ"
 
@@ -186,21 +267,21 @@ msgstr "ਸਹਾਇਤਾ ਨਾਲ - ਸਭ ਤੋਂ ਵੱਡੀ ਲਗਾ�
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:16001
+#: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
 msgstr "ਸਹਾਇਤਾ ਨਾਲ - ਪੂਰੀ ਡਿਸਕ ਵਰਤੋਂ"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
 msgstr "ਪਾਰਟੀਸ਼ਨਿੰਗ ਲਈ ਡਿਸਕ ਚੁਣੋ:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
@@ -212,8 +293,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
-#: ../partman-auto.templates:18001
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "ਦਸਤੀ"
 
@@ -221,7 +302,7 @@ msgstr "ਦਸਤੀ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
+#: ../partman-auto.templates:20001
 msgid "Automatically partition the free space"
 msgstr "ਖਾਲੀ ਥਾਂ ਮੁਤਾਬਕ ਆਟੋਮੈਟਿਕ ਪਾਰਟੀਸ਼ਨਿੰਗ ਕਰੋ"
 
@@ -229,7 +310,7 @@ msgstr "ਖਾਲੀ ਥਾਂ ਮੁਤਾਬਕ ਆਟੋਮੈਟਿਕ ਪ�
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:20001
+#: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
 msgstr "ਪਾਰਟੀਸ਼ਨ ਵਿੱਚ ਸਾਰੀਆਂ ਫਾਇਲਾਂ (ਨਵੇਂ ਵਰਤੋਂਕਾਰਾਂ ਲਈ ਸਿਫਾਰਸ਼ੀ ਹੈ)"
 
@@ -237,7 +318,7 @@ msgstr "ਪਾਰਟੀਸ਼ਨ ਵਿੱਚ ਸਾਰੀਆਂ ਫਾਇਲਾ
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:21001
+#: ../partman-auto.templates:22001
 msgid "Separate /home partition"
 msgstr "ਵੱਖਰਾ /home ਪਾਰਟੀਸ਼ਨ"
 
@@ -245,7 +326,7 @@ msgstr "ਵੱਖਰਾ /home ਪਾਰਟੀਸ਼ਨ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:22001
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
 msgstr "ਵੱਖਰੇ /home, /var, ਅਤੇ /tmp ਪਾਰਟੀਸ਼ਨ"
 
@@ -253,6 +334,14 @@ msgstr "ਵੱਖਰੇ /home, /var, ਅਤੇ /tmp ਪਾਰਟੀਸ਼ਨ"
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr "ਛੋਟੀ-ਡਿਸਕ (<1ਗੀਬਾ) ਪਾਰਟੀਸ਼ਨਿੰਗ ਸਕੀਮ"
+#: ../partman-auto.templates:24001
+msgid "Small-disk (< 10GB) partitioning scheme"
+msgstr "ਛੋਟੀ-ਡਿਸਕ (< 10GB) ਪਾਰਟੀਸ਼ਨਿੰਗ ਸਕੀਮ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr "ਵੱਖਰੇ /var ਅਤੇ /srv, swap < 1GB (ਸਰਵਰਾਂ ਲਈ)"

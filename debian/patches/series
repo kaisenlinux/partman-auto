@@ -1,3 +1,6 @@
 000-kaisen-deletion-of-multi-scheme.patch
-001-applying-btrfs-by-default-legacy.patch
-002-applying-btrfs-by-default-efi.patch
+001-applying-btrfs-by-default-recipes.patch
+002-applying-btrfs-by-default-recipes-amd64.patch
+003-applying-btrfs-by-default-recipes-arm64.patch
+004-applying-btrfs-by-default-recipes-amd64-efi.patch
+005-applying-btrfs-by-default-recipes-arm64-efi.patch

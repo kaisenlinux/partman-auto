@@ -1,0 +1,95 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+
+--- partman-auto-173.orig/recipes-arm64-efi/atomic
++++ partman-auto-173/recipes-arm64-efi/atomic
+@@ -3,31 +3,27 @@ partman-auto/text/atomic_scheme ::
+ 18 18 18 free
+ 	.
+ 
+-768 788 1024 free
++128 128 128 free
+ 	$primary{ }
+ 	$iflabel{ msdos gpt }
+ 	$reusemethod{ }
+ 	method{ efi }
+ 	format{ } .
+ 
+-768 788 1024 ext4
++2048 2048 2048 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenBoot }
+ 	use_filesystem{ }
+-	filesystem{ ext4 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-8000 8850 -1 $default_filesystem
++900 10000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+-
+-500 550 100% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+--- partman-auto-173.orig/recipes-arm64-efi/home
++++ partman-auto-173/recipes-arm64-efi/home
+@@ -3,39 +3,36 @@ partman-auto/text/home_scheme ::
+ 18 18 18 free
+ 	.
+ 
+-768 788 1024 free
++128 128 128 free
+ 	$primary{ }
+ 	$iflabel{ msdos gpt }
+ 	$reusemethod{ }
+ 	method{ efi }
+ 	format{ } .
+ 
+-768 788 1024 ext4
++2048 2048 2048 btrfs
+ 	$defaultignore{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenBoot }
+ 	use_filesystem{ }
+-	filesystem{ ext4 }
++	filesystem{ btrfs }
+ 	mountpoint{ /boot } .
+ 
+-7500 7550 100000 $default_filesystem
++1500 6000 30000 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenLinux }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ / } .
+ 
+-500 550 100% linux-swap
+-	$lvmok{ }
+-	$reusemethod{ }
+-	method{ swap }
+-	format{ } .
+-
+-1000 1800 -1 $default_filesystem
++1000 10000 -1 btrfs
+ 	$lvmok{ }
+ 	method{ format }
+ 	format{ }
++	label{ KaisenHome }
+ 	use_filesystem{ }
+-	$default_filesystem{ }
++	filesystem{ btrfs }
+ 	mountpoint{ /home } .

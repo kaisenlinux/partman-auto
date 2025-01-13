@@ -18,7 +18,7 @@
 # * Setyo Nugroho (setyo@gmx.net), 2004.
 # * Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>, 2008-2011.
 # * Al Qalit <qal.smith@gmail.com>, 2018.
-# * Andika Triwidada <andika@gmail.com>, 2018, 2019, 2020.
+# * Andika Triwidada <andika@gmail.com>, 2018, 2019, 2020, 2021.
 # * Fahmi Ali <fahmi.ali1945@gmail.com>, 2020.
 #
 # Translations from iso-codes:
@@ -34,8 +34,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2020-07-26 03:41+0000\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2024-10-16 15:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
 "debian.org>\n"
@@ -45,19 +45,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#. Type: text
+#. Type: note
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
+msgid "Help on partitioning"
+msgstr "Bantuan tentang proses partisi"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"Pemartisian hard disk terdiri atas membaginya untuk membuat ruang yang "
+"diperlukan untuk memasang sistem Anda yang baru.  Anda harus memilih partisi "
+"mana yang akan digunakan untuk instalasi."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr "Pilih sebuah ruang kosong tempat partisi akan dibuat."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr ""
+"Pilih piranti yang akan dihapus partisinya dan kemudian dibuatkan tabel "
+"partisi yang kosong."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"Pilih sebuah partisi untuk dihapus atau untuk ditentukan bagaimana Debian "
+"akan menggunakannya. Paling tidak, Anda perlu sebuah partisi untuk menampung "
+"sistem berkas root (yang titik kaitnya adalah /).  Kebanyakan orang juga "
+"merasa perlu memiliki partisi swap yang terpisah.  \"Swap\" merupakan ruang "
+"coretan yang dapat digunakan sistem operasi sebagai \"memori virtual\"."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"Bila partisi telah diformat, Anda dapat memilih untuk tetap menggunakannya "
+"tanpa menghapus data yang telah ada.  Partisi yang akan dipakai seperti ini "
+"akan ditandai dengan \"${KEEP}\" pada menu utama proses partisi."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"Secara umum, Anda ingin memformat partisi dengan sistem berkas baru.  "
+"CATATAN: semua data pada partisi akan dihapus tanpa dapat kembali lagi.  "
+"Jika Anda memutuskan untuk memformat partisi yang telah diformat sebelumnya, "
+"itu akan ditandai dengan \"${DESTROY}\" pada menu utama proses partisi.  "
+"Jika tidak, itu akan ditandai dengan \"${FORMAT}\"."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:2001
 msgid "Please wait..."
 msgstr "Silakan tunggu..."
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:2001
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
-msgstr "Menghitung kapasitas partisi-partisi baru..."
+msgstr "Menghitung partisi-partisi baru..."
 
 #. Type: error
 #. Description
@@ -65,14 +150,14 @@ msgstr "Menghitung kapasitas partisi-partisi baru..."
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "Gagal mempartisi hard disk yang telah dipilih"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -83,7 +168,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -97,25 +182,24 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
 msgstr "Metode pemartisian:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"Program instalasi ini dapat membimbing Anda mempartisi hard disk (dengan "
-"pola standar yang berbeda), atau bila Anda suka, Anda dapat melakukannya "
-"secara manual. Jika Anda memilih sarana pemartisian terpandu, Anda akan "
-"tetap memiliki kesempatan di lain waktu untuk melihat dan menyesuaikan "
-"hasilnya."
+"Pemasang dapat membimbing Anda mempartisi hard disk (memakai skema standar "
+"yang berbeda), atau bila Anda suka, Anda dapat melakukannya secara manual. "
+"Jika Anda memilih pemartisian terpandu, Anda akan tetap memiliki kesempatan "
+"nanti untuk meninjau dan menyesuaikan hasilnya."
 
 #. Type: select
 #. Description
@@ -123,7 +207,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
@@ -134,9 +218,9 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
-msgstr "Pola partisi:"
+msgstr "Skema partisi:"
 
 #. Type: select
 #. Description
@@ -147,32 +231,32 @@ msgstr "Pola partisi:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
-msgstr "Telah dipilih untuk dipartisi:"
+msgstr "Dipilih untuk dipartisi:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
 msgstr ""
-"Hard disk dapat dipartisi dengan satu dari beberapa pola yang berbeda. Jika "
-"Anda tidak yakin, pilih yang pertama."
+"Disk dapat dipartisi memakai salah satu dari beberapa skema yang berbeda. "
+"Jika Anda tidak yakin, pilih yang pertama."
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "Ruang kosong tidak dapat dipakai"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -184,7 +268,7 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
+#: ../partman-auto.templates:15001
 msgid "Guided partitioning"
 msgstr "Pemartisian terpandu"
 
@@ -192,7 +276,7 @@ msgstr "Pemartisian terpandu"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:15001
+#: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
 msgstr "Terpandu - gunakan area kosong terbesar yang kontinu"
 
@@ -200,35 +284,35 @@ msgstr "Terpandu - gunakan area kosong terbesar yang kontinu"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:16001
+#: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
-msgstr "Terpandu -- gunakan seluruh harddisk"
+msgstr "Terpandu - gunakan seluruh disk"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
-msgstr "Pilih harddisk yang akan dipartisi:"
+msgstr "Pilih disk yang akan dipartisi:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"Ingat, bahwa data yang ada di harddisk yang Anda pilih akan dihapus. Tetapi, "
-"akan dilakukan setelah Anda memastikan untuk melakukan perubahan pada "
-"harddisk."
+"Perhatikan bahwa seluruh data yang ada di disk yang Anda pilih akan dihapus, "
+"tetapi tidak sebelum Anda memastikan bahwa Anda memang ingin membuat "
+"perubahan."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
-#: ../partman-auto.templates:18001
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "Manual"
 
@@ -236,7 +320,7 @@ msgstr "Manual"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
+#: ../partman-auto.templates:20001
 msgid "Automatically partition the free space"
 msgstr "Partisi ruang kosong secara otomatis"
 
@@ -244,7 +328,7 @@ msgstr "Partisi ruang kosong secara otomatis"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:20001
+#: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
 msgstr "Semua berkas di satu partisi (disarankan untuk pemula)"
 
@@ -252,15 +336,15 @@ msgstr "Semua berkas di satu partisi (disarankan untuk pemula)"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:21001
+#: ../partman-auto.templates:22001
 msgid "Separate /home partition"
-msgstr "Partisi /home yang terpisah"
+msgstr "Partisi /home terpisah"
 
 #. Type: text
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:22001
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
 msgstr "Partisi /home, /var, dan /tmp terpisah"
 
@@ -268,6 +352,14 @@ msgstr "Partisi /home, /var, dan /tmp terpisah"
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr "Pola partisi hard disk kecil (< 1GB)"
+#: ../partman-auto.templates:24001
+msgid "Small-disk (< 10GB) partitioning scheme"
+msgstr "Pola partisi hard disk kecil (< 10GB)"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr "Pisahkan /var dan /srv, swap < 1GB (untuk server)"

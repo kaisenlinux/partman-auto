@@ -9,14 +9,14 @@
 #
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
-# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2018, 2019
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2018-02-08 14:24+0500\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2019-09-10 18:06+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: tg\n"
@@ -25,17 +25,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=1;\n"
 
-#. Type: text
+#. Type: note
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
+msgid "Help on partitioning"
+msgstr "Кумак барои қисмбандӣ"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"Қисмбандии диски сахт аз ҷудо кардани он барои эҷод кардани фазои лозимӣ "
+"барои насб кардани низоми нави шумо иборат аст.  Шумо бояд интихоб намоед, "
+"кадом қисми диск барои насбкунӣ истифода мешавад."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr ""
+"Фазои холиро барои дар дохили он эҷод кардани қисмҳои диск интихоб намоед."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr ""
+"Дастгоҳеро интихоб намоед, ки ҳамаи қисмҳои диски он тоза карда мешаванд ва "
+"ҷадвали қисмбандии холии наверо эҷод намоед."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"Қисми дискеро интихоб карда тоза намоед, ё ки тарзи истифодабарии онро "
+"муайян намоед. Воқеан, ақаллан як қисми диски шумо бояд дорои низоми файлии "
+"root бошад (ки нуқтаи васлкунии он \"/\" мебошад).  Одамони зиёд инчунин "
+"ҳисоб мекунанд, ки қисми диски алоҳидаи мубодилакунӣ низ лозим аст.  \"Swap"
+"\" - ин фазои муваққатии низоми омил мебошад, ки ба он истифодаи захирагоҳи "
+"дискро ҳамчун \"ҳофизаи виртуалӣ\" иҷозат медиҳад."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"Вақте ки қисми диск аллакай шаклбандишуда мебошад, шумо метавонед интихоб "
+"намоед, ки иттилооти мавҷудбудаи қисми дискро нигоҳ доред ва истифода "
+"баред.  Қисмбандиҳое, чи ҳамин тарзи истифода мешаванд, дар менюи асосии "
+"қисмбандӣ бо \"${KEEP}\" қайд карда мешаванд."
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"Дар умум, ба шумо лозим мешавад, ки қисми дискро бо низоми файлии нави "
+"эҷодшуда шаклбандӣ намоед.  ТАВЗЕҲ: тамоми иттилоот дар қисми диск бебозгашт "
+"нест карда мешавад.  Агар шумо қарор намоед, ки қисми дискеро, ки аллакай "
+"шаклбандӣ шудааст, шаклбандӣ намоед, он дар менюи асосии қисмбандӣ байрақчаи "
+"\"${DESTROY}\" интихоб мекунад. Ба таври дигар, он дорои байрақчаи "
+"\"${FORMAT}\" мегардад."
+
+#. Type: text
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:2001
 msgid "Please wait..."
 msgstr "Лутфан, интизор шавед..."
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:2001
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
 msgstr "Ҳисобкунии қисмҳои диски нав..."
 
@@ -45,14 +134,14 @@ msgstr "Ҳисобкунии қисмҳои диски нав..."
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "Қисмбандии диски интихобшуда қатъ шудааст"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -63,7 +152,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -77,14 +166,14 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
 msgstr "Усули қисмбандӣ:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
@@ -102,7 +191,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
@@ -113,7 +202,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
 msgstr "Нақшаи қисмбандӣ:"
 
@@ -126,14 +215,14 @@ msgstr "Нақшаи қисмбандӣ:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
 msgstr "Барои қисмбандӣ интихоб шудааст:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
@@ -144,14 +233,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "Фазои озоди истифоданашуда"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -164,7 +253,7 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
+#: ../partman-auto.templates:15001
 msgid "Guided partitioning"
 msgstr "Қисмбандии роҳнамоӣ"
 
@@ -172,7 +261,7 @@ msgstr "Қисмбандии роҳнамоӣ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:15001
+#: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
 msgstr "Идорашаванда - истифодаи фазои озоди идомадиҳандаи калонтарин"
 
@@ -180,21 +269,21 @@ msgstr "Идорашаванда - истифодаи фазои озоди ид
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:16001
+#: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
 msgstr "Идорашаванда - тамоми дискро истифода баред"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
 msgstr "Дискро барои қисмбандӣ интихоб намоед:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
@@ -206,8 +295,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
-#: ../partman-auto.templates:18001
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "Дастӣ"
 
@@ -215,7 +304,7 @@ msgstr "Дастӣ"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
+#: ../partman-auto.templates:20001
 msgid "Automatically partition the free space"
 msgstr "Эҷодкунии қисмҳои диск дар фазои озод ба таври худкор"
 
@@ -223,7 +312,7 @@ msgstr "Эҷодкунии қисмҳои диск дар фазои озод б
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:20001
+#: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
 msgstr "Ҳамаи файлҳо дар як қисми диск (барои корбарони нав тавсия мешавад)"
 
@@ -231,7 +320,7 @@ msgstr "Ҳамаи файлҳо дар як қисми диск (барои ко
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:21001
+#: ../partman-auto.templates:22001
 msgid "Separate /home partition"
 msgstr "Ҷудо кардани қисми диски /home"
 
@@ -239,7 +328,7 @@ msgstr "Ҷудо кардани қисми диски /home"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:22001
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
 msgstr "Ҷудо кардани қисмҳои диски /home, /var ва /tmp"
 
@@ -247,6 +336,15 @@ msgstr "Ҷудо кардани қисмҳои диски /home, /var ва /tmp"
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
+#: ../partman-auto.templates:24001
+#, fuzzy
+msgid "Small-disk (< 10GB) partitioning scheme"
 msgstr "Диски хурд (< 1ГБ) нақшаи қисмбандӣ"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr ""

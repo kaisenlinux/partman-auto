@@ -12,7 +12,7 @@
 #   Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
 #   Free Software Foundation, Inc., 2000, 2001, 2004, 2005, 2006
 #   IIDA Yosiaki <iida@gnu.org>, 2004, 2005, 2006.
-#   Kenshi Muto <kmuto@debian.org>, 2006-2007
+#   Kenshi Muto <kmuto@debian.org>, 2006-2018
 #   Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2001.
 #   Takuro Ashie <ashie@homa.ne.jp>, 2001.
 #   Tobias Quathamer <toddy@debian.org>, 2007.
@@ -22,30 +22,121 @@
 #   Yasuaki Taniguchi <yasuakit@gmail.com>, 2010, 2011.
 #   Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
 #
+#   Kentaro Hayashi <kenhys@gmail.com>, 2021.
+#   YOSHINO Yoshihito <yy.y.ja.jp@gmail.com>, 2021.
+#   Norimitsu SUGIMOTO <dictoss@live.jp>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
-"POT-Creation-Date: 2020-03-10 20:01+0000\n"
-"PO-Revision-Date: 2014-09-20 22:20+0900\n"
-"Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
+"POT-Creation-Date: 2024-11-26 20:02+0000\n"
+"PO-Revision-Date: 2024-11-10 04:00+0000\n"
+"Last-Translator: Sadaharu Wakisaka <informatiekantoor@gmail.com>\n"
 "Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Help on partitioning"
+msgstr "パーティショニングについてのヘルプ"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Partitioning a hard drive consists of dividing it to create the space needed "
+"to install your new system.  You need to choose which partition(s) will be "
+"used for the installation."
+msgstr ""
+"ハードドライブのパーティショニングとは、あなたの新しいシステムをインストール"
+"するのに必要な領域を作るために、ディスクを分割することです。インストールに使"
+"うパーティションを選ぶ必要があります。"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid "Select a free space to create partitions in it."
+msgstr "パーティションを作るための空き領域を選択してください。"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a device to remove all partitions in it and create a new empty "
+"partition table."
+msgstr ""
+"すべてのパーティションを削除して、新しい空のパーティションテーブルを作成する"
+"デバイスを選択してください。"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"Select a partition to remove it or to specify how it should be used. At a "
+"bare minimum, you need one partition to contain the root of the file system "
+"(whose mount point is /).  Most people also feel that a separate swap "
+"partition is a necessity.  \"Swap\" is scratch space for an operating "
+"system, which allows the system to use disk storage as \"virtual memory\"."
+msgstr ""
+"削除したい、またはどのように利用するかを指定したいパーティションを選択してく"
+"ださい。最小のシステムでは、ファイルシステムのルート (マウントポイントは /) "
+"を含む 1 つのパーティションを必要とします。ほとんどの人はスワップパーティショ"
+"ンを分割しておくことも必要だと感じるでしょう。\"スワップ\" はオペレーティング"
+"システムのための一時領域で、システムがディスクストレージを \"仮想メモリ\" と"
+"して利用できるようにします。"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"When the partition is already formatted you may choose to keep and use the "
+"existing data in the partition.  Partitions that will be used in this way "
+"are marked with \"${KEEP}\" in the main partitioning menu."
+msgstr ""
+"パーティションがすでに初期化されているときには、そのままにしてパーティション"
+"の既存のデータを使うように選択することができます。この方法で利用するパーティ"
+"ションには、メインパーティショニングメニューで \"${KEEP}\" というマークが付き"
+"ます。"
+
+#. Type: note
+#. Description
+#. :sl1:
+#: ../partman-auto.templates:1001
+msgid ""
+"In general you will want to format the partition with a newly created file "
+"system.  NOTE: all data in the partition will be irreversibly deleted.  If "
+"you decide to format a partition that is already formatted, it will be "
+"marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
+"be marked with \"${FORMAT}\"."
+msgstr ""
+"一般に、あなたは新しく作成するファイルシステムでパーティションを初期化したい"
+"と思っているでしょう。*注意*: パーティションのすべてのデータは元に戻せない状"
+"態で削除されます。すでに初期化済みのパーティションを初期化する場合には、メイ"
+"ンパーティショニングメニューで \"${DESTROY}\" マークが付きます。それ以外の場"
+"合には、\"${FORMAT}\" マークが付きます。"
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:1001
+#: ../partman-auto.templates:2001
 msgid "Please wait..."
 msgstr "しばらくお待ちください..."
 
 #. Type: text
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:2001
+#: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
 msgstr "新しいパーティションを計算しています..."
 
@@ -55,14 +146,14 @@ msgstr "新しいパーティションを計算しています..."
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001 ../partman-auto.templates:4001
+#: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
 msgstr "選択されたディスクのパーティショニングに失敗しました"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:3001
+#: ../partman-auto.templates:4001
 msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
@@ -73,7 +164,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:4001
+#: ../partman-auto.templates:5001
 msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
@@ -87,14 +178,14 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid "Partitioning method:"
 msgstr "パーティショニングの方法:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001
+#: ../partman-auto.templates:6001
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
@@ -111,7 +202,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:5001 ../partman-auto.templates:9001
+#: ../partman-auto.templates:6001 ../partman-auto.templates:10001
 msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
@@ -122,7 +213,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
 msgstr "パーティショニング機構:"
 
@@ -135,14 +226,14 @@ msgstr "パーティショニング機構:"
 #.
 #. It is followed by a variable giving the chosen disk, hence the colon
 #. at the end of the sentence. Please keep it.
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
 msgstr "選択されたパーティショニング:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:10001
+#: ../partman-auto.templates:11001
 msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
@@ -153,14 +244,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid "Unusable free space"
 msgstr "空き領域を利用できません"
 
 #. Type: error
 #. Description
 #. :sl2:
-#: ../partman-auto.templates:11001
+#: ../partman-auto.templates:12001
 msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
@@ -173,7 +264,7 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:14001
+#: ../partman-auto.templates:15001
 msgid "Guided partitioning"
 msgstr "ガイドによるパーティショニング"
 
@@ -181,7 +272,7 @@ msgstr "ガイドによるパーティショニング"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:15001
+#: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
 msgstr "ガイド - 最大の連続空き領域を使う"
 
@@ -189,21 +280,21 @@ msgstr "ガイド - 最大の連続空き領域を使う"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:16001
+#: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
 msgstr "ガイド - ディスク全体を使う"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
 msgstr "パーティショニングするディスクの選択:"
 
 #. Type: select
 #. Description
 #. :sl1:
-#: ../partman-auto.templates:17001
+#: ../partman-auto.templates:18001
 msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
@@ -215,8 +306,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#. This is a method for partioning - as in guided (automatic) versus manual
-#: ../partman-auto.templates:18001
+#. This is a method for partitioning - as in guided (automatic) versus manual
+#: ../partman-auto.templates:19001
 msgid "Manual"
 msgstr "手動"
 
@@ -224,7 +315,7 @@ msgstr "手動"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:19001
+#: ../partman-auto.templates:20001
 msgid "Automatically partition the free space"
 msgstr "ガイドによるパーティショニング"
 
@@ -232,7 +323,7 @@ msgstr "ガイドによるパーティショニング"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:20001
+#: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
 msgstr "すべてのファイルを 1 つのパーティションに (初心者ユーザには推奨)"
 
@@ -240,7 +331,7 @@ msgstr "すべてのファイルを 1 つのパーティションに (初心者�
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:21001
+#: ../partman-auto.templates:22001
 msgid "Separate /home partition"
 msgstr "/home パーティションの分割"
 
@@ -248,7 +339,7 @@ msgstr "/home パーティションの分割"
 #. Description
 #. :sl1:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:22001
+#: ../partman-auto.templates:23001
 msgid "Separate /home, /var, and /tmp partitions"
 msgstr "/home, /var, /tmp パーティションを分割"
 
@@ -256,6 +347,14 @@ msgstr "/home, /var, /tmp パーティションを分割"
 #. Description
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-#: ../partman-auto.templates:23001
-msgid "Small-disk (< 1GB) partitioning scheme"
-msgstr "小さなディスク (< 1GB) のパーティショニング機構"
+#: ../partman-auto.templates:24001
+msgid "Small-disk (< 10GB) partitioning scheme"
+msgstr "小さなディスク (< 10GB) のパーティショニング機構"
+
+#. Type: text
+#. Description
+#. :sl1:
+#. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
+#: ../partman-auto.templates:25001
+msgid "Separate /var and /srv, swap < 1GB (for servers)"
+msgstr "/var, /srv, スワップ < 1GB パーティションを分割 (サーバー用)"
