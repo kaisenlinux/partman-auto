@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2024-11-26 20:02+0000\n"
-"PO-Revision-Date: 2020-07-21 17:24+0000\n"
-"Last-Translator: Abdusalam <1810010207@s.upc.edu.cn>\n"
+"PO-Revision-Date: 2025-05-30 13:03+0000\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
@@ -157,7 +157,7 @@ msgid ""
 "the partition table."
 msgstr ""
 "بۇ خىل ئەھۋالنىڭ يۈز بېرىشى رايون تەقسىمات جەدۋىلىدە ئاساسلىق(primary) "
-"رايوننىڭ بەك كۆپ بولۇش  سەۋەبىدىن بولغان."
+"رايوننىڭ بەك كۆپ بولۇش سەۋەبىدىن بولغان."
 
 #. Type: select
 #. Description
@@ -322,7 +322,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:22001
 msgid "Separate /home partition"
-msgstr "/home  نى ئايرىم رايونغا قويۇش"
+msgstr "/home نى ئايرىم رايونغا قويۇش"
 
 #. Type: text
 #. Description
@@ -346,4 +346,4 @@ msgstr "كىچىك دىسكا (< 10GB)رايونغا ئايرىش لايىھىس
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:25001
 msgid "Separate /var and /srv, swap < 1GB (for servers)"
-msgstr ""
+msgstr "/var بىلەن/srv نى ئايرىم رايونغا ئايرىيدۇ، swap<1GB(مۇلازىمېتىر ئۈچۈن)"

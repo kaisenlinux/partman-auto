@@ -309,8 +309,8 @@ for arch in default amd64 amd64-efi armhf arm64 arm64-efi ppc64el riscv64; do
 		;;
 	  ppc64el)
 		efi=
-		boot_fs=ext4
-		boot_option="$defaultignore$primary"
+		boot_fs=ext2
+		boot_option="$primary"
 		root_option="$primary"
 		lvm_option="$lvmok"
 		reuse_option=

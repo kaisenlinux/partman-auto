@@ -61,8 +61,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2024-11-26 20:02+0000\n"
-"PO-Revision-Date: 2024-09-10 17:33+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2025-07-07 20:50+0000\n"
+"Last-Translator: Santiago Vila <sanvila@debian.org>\n"
 "Language-Team: Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -87,8 +87,8 @@ msgid ""
 "used for the installation."
 msgstr ""
 "El particionado de un disco duro consiste en dividirlo para crear el espacio "
-"libre necesario para instalar el nuevo sistema. Debe elegir qué partición/es "
-"se utilizará/n para la instalación."
+"libre necesario para instalar el nuevo sistema. Debe elegir qué particiones "
+"se utilizarán para la instalación."
 
 #. Type: note
 #. Description
@@ -106,7 +106,7 @@ msgid ""
 "partition table."
 msgstr ""
 "Seleccione un dispositivo para eliminar todas las particiones y crear una "
-"nueva tabla de partición vacía."
+"nueva tabla de particiones vacía."
 
 #. Type: note
 #. Description
@@ -278,7 +278,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-auto.templates:12001
 msgid "Unusable free space"
-msgstr "Espacio libre no utilizado"
+msgstr "Espacio libre no utilizable"
 
 #. Type: error
 #. Description

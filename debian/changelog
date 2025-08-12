@@ -1,3 +1,54 @@
+partman-auto (177-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 177 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 10 Aug 2025 17:22:26 +0200
+
+partman-auto (177) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Spanish (es.po) by Santiago Vila
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 20 Jul 2025 06:33:48 +0200
+
+partman-auto (176) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Greek (el.po) by galaxico
+  * Uyghur (ug.po) by Abduqadir Abliz
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 29 Jun 2025 15:02:36 +0200
+
+partman-auto (175) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Valentin Vidic
+  * Hungarian (hu.po) by Szia Tomi
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Marathi (mr.po) by Kalyani Kenekar
+  * Serbian (sr.po) by Мирослав Николић
+  * Vietnamese (vi.po) by Dagon Vn
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 01 Apr 2025 16:05:15 +0200
+
+partman-auto (174) unstable; urgency=medium
+
+  * Team upload
+
+  * ppc64el: revert /boot filesystem from ext4 back to ext2, since petitboot
+    does not support ext4.
+  * ppc64el: create a separate ext2 /boot partition also for the non-lvm case,
+    as it already is for lvm. So we support petitboot in all partitioning
+    schemes.
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Szia Tomi
+  * Polish (pl.po) by Matthaiks
+
+ -- Holger Wansing <hwansing@mailbox.org>  Fri, 07 Feb 2025 21:11:08 +0100
+
 partman-auto (173-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 173 release

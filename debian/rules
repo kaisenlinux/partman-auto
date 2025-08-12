@@ -21,11 +21,3 @@ override_dh_link:
 	dh_link lib/partman/recipes-powerpc-chrp_ibm \
 		lib/partman/recipes-powerpc-chrp_rs6k
 endif
-
-execute_after_dh_di_numbers:
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)/multi
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)/server
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)/small_disk
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)-efi/multi
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)-efi/server
-	rm $(CURDIR)/debian/partman-auto/lib/partman/recipes-$(ARCH)-efi/small_disk

@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2024-11-26 20:02+0000\n"
-"PO-Revision-Date: 2024-11-24 22:01+0000\n"
+"PO-Revision-Date: 2025-03-08 03:27+0000\n"
 "Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
@@ -55,16 +55,16 @@ msgid ""
 "to install your new system.  You need to choose which partition(s) will be "
 "used for the installation."
 msgstr ""
-"Egy merevlemez particionálása magában foglalja annak felosztását az új "
-"rendszer számára létrehozandó hely érdekében. Ki kell választani a "
-"telepítésre használt egy, vagy több partíciót."
+"A merevlemez particionálása a merevlemez felosztásából áll, hogy létrehozd "
+"az új rendszer telepítéséhez szükséges helyet.  Ki kell választanod, hogy "
+"melyik partíció(ka)t fogod használni a telepítéshez."
 
 #. Type: note
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:1001
 msgid "Select a free space to create partitions in it."
-msgstr "Válasszon szabad helyet partíció létrehozásához."
+msgstr "Válassz szabad helyet partíció(k) létrehozásához."
 
 #. Type: note
 #. Description
@@ -74,8 +74,8 @@ msgid ""
 "Select a device to remove all partitions in it and create a new empty "
 "partition table."
 msgstr ""
-"Válasszon eszközt, melyen törli a partíciókat és új üres partíciós táblát "
-"hoz létre."
+"Válassz ki egy eszközt, melyen törlöd a partíciókat és új üres partíciós "
+"táblát hozol létre."
 
 #. Type: note
 #. Description
@@ -88,10 +88,11 @@ msgid ""
 "partition is a necessity.  \"Swap\" is scratch space for an operating "
 "system, which allows the system to use disk storage as \"virtual memory\"."
 msgstr ""
-"Egy partíciót kiválasztva az törölhető vagy megadható a felhasználási módja. "
-"Legalább egy, a fájlrendszer gyökerét tartalmazó partíció szükséges (melynek "
-"csatolási pontja /). A legtöbben a külön cserepartíciót is szükségesnek "
-"tartják. A \"cserehely\" \"virtuális memória\" feladatot tölt be."
+"Egy partíciót kiválasztva azt törölheted vagy megadhatod a felhasználási "
+"módját. Legalább egy, a fájlrendszer gyökerét tartalmazó partícióra lesz "
+"szükséged (melynek a csatolási pontja /).  A legtöbb felhasználó egy külön "
+"cserepartíciót (swap) is szükségesnek tart. A cserehely (swap) virtuális "
+"memória feladatot tölt be."
 
 #. Type: note
 #. Description
@@ -102,8 +103,9 @@ msgid ""
 "existing data in the partition.  Partitions that will be used in this way "
 "are marked with \"${KEEP}\" in the main partitioning menu."
 msgstr ""
-"Már formázott partíciók adatai megőrizhetők. Az így használt partíciók a "
-"\"${KEEP}\" jellel jelöltek a fő particionáló menüben."
+"A régebben formázott partíciókat megtarthatod és használhatod a partícióban "
+"lévő adatokat.  Az így felhasználandó partíciók „${KEEP}” jelöléssel vannak "
+"ellátva a particionálás főmenüjében."
 
 #. Type: note
 #. Description
@@ -117,23 +119,23 @@ msgid ""
 "be marked with \"${FORMAT}\"."
 msgstr ""
 "Az új partíciókat általában újonnan létrehozott fájlrendszerrel formázzuk. "
-"MEGJEGYZÉS: a partíción lévő minden adat elvész. Ha újraformáz egy "
-"partíciót, a \"${DESTROY}\" jelzi a fő particionáló menüben. Amúgy "
-"\"${FORMAT}\" jelet kap."
+"MEGJEGYZÉS: a partíción lévő minden adat elvész.  Ha újraformázol egy "
+"partíciót, akkor „${DESTROY}” jelzi a particionálás főmenüjében. Ellenkező "
+"esetben „${FORMAT}” jelölést kap."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:2001
 msgid "Please wait..."
-msgstr "Kérem, várjon..."
+msgstr "Kérlek, várj..."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:3001
 msgid "Computing the new partitions..."
-msgstr "Új partíciók meghatározása..."
+msgstr "Az új partíciók meghatározása..."
 
 #. Type: error
 #. Description
@@ -143,7 +145,7 @@ msgstr "Új partíciók meghatározása..."
 #. :sl2:
 #: ../partman-auto.templates:4001 ../partman-auto.templates:5001
 msgid "Failed to partition the selected disk"
-msgstr "A kiválasztott lemez particionálása meghiúsult"
+msgstr "A kiválasztott lemez particionálása nem sikerült"
 
 # Type: error
 # Description
@@ -156,8 +158,8 @@ msgid ""
 "This probably happened because the selected disk or free space is too small "
 "to be automatically partitioned."
 msgstr ""
-"Valószínű ok: a kiválasztott meghajtó vagy szabad hely túl kicsi az "
-"automatikus particionáláshoz."
+"Valószínűleg azért, mert a kiválasztott lemez vagy a szabad hely túl kicsi "
+"az automatikus particionáláshoz."
 
 # Type: error
 # Description
@@ -170,7 +172,8 @@ msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
 msgstr ""
-"Valószínű ok: a partíciós táblában túl sok (elsődleges) partíció szerepel."
+"Valószínűleg azért, mert a partíciós táblában túl sok (elsődleges) partíció "
+"található."
 
 #. Type: select
 #. Description
@@ -192,9 +195,10 @@ msgid ""
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"A telepítő végigvezethet egy lemez particionálásán (különböző szabvány "
-"sémákkal), de kézzel is végezhető. Az irányított particionálás után is "
-"lehetőség lesz az eredmény átnézésére és testreszabására."
+"A telepítő végig tud vezetni a lemez particionálásán (irányít a különböző "
+"szabványos sémák használata során), vagy ha szeretnéd, akkor kézzel is "
+"elvégezheted a partícionálást. Később még lehetőséged lesz az eredmények "
+"felülvizsgálatára és testreszabására."
 
 #. Type: select
 #. Description
@@ -207,15 +211,15 @@ msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
 msgstr ""
-"Ha az irányított particionálást választja egy egész lemezre, a következőkben "
-"meg kell adnia a lemezt."
+"Ha egy teljes lemez irányított particionálását választod, a következőkben "
+"meg kell adnod, hogy melyik lemezt szeretnéd."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:11001
 msgid "Partitioning scheme:"
-msgstr "Particionálási mód:"
+msgstr "Particionálási séma:"
 
 #. Type: select
 #. Description
@@ -228,7 +232,7 @@ msgstr "Particionálási mód:"
 #. at the end of the sentence. Please keep it.
 #: ../partman-auto.templates:11001
 msgid "Selected for partitioning:"
-msgstr "Particionálandó:"
+msgstr "Partícionálásra kijelölt:"
 
 #. Type: select
 #. Description
@@ -238,7 +242,8 @@ msgid ""
 "The disk can be partitioned using one of several different schemes. If you "
 "are unsure, choose the first one."
 msgstr ""
-"Többfajta particionálási mód választható. Kétség esetén a legelső ajánlott."
+"A lemez partícionálására több séma közül választhatsz egyet. Ha bizonytalan "
+"vagy, válaszd az elsőt."
 
 # Type: error
 # Description
@@ -248,7 +253,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-auto.templates:12001
 msgid "Unusable free space"
-msgstr "Felhasználhatatlan szabad hely"
+msgstr "Használhatatlan szabad hely"
 
 # Type: error
 # Description
@@ -261,8 +266,8 @@ msgid ""
 "Partitioning failed because the chosen free space may not be used. There are "
 "probably too many (primary) partitions in the partition table."
 msgstr ""
-"A particionálás meghiúsult, mert a kijelölt szabad hely nem használható. A "
-"partíciós táblában alighanem túl sok (elsődleges) partíció van."
+"A particionálás nem sikerült, mert a kijelölt szabad hely nem használható. "
+"Valószínűleg túl sok (elsődleges) partíció található a partíciós táblában."
 
 #. Type: text
 #. Description
@@ -270,7 +275,7 @@ msgstr ""
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:15001
 msgid "Guided partitioning"
-msgstr "Telepítővel segített particionálás"
+msgstr "Irányított particionálás"
 
 #. Type: text
 #. Description
@@ -286,14 +291,14 @@ msgstr "Irányított - a legnagyobb összefüggő szabad helyre"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
-msgstr "Irányított - az egész lemez felhasználása"
+msgstr "Irányított - a teljes lemez használata"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:18001
 msgid "Select disk to partition:"
-msgstr "Particionálandó lemez:"
+msgstr "Válaszd ki a particionálandó lemezt:"
 
 #. Type: select
 #. Description
@@ -303,9 +308,9 @@ msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"Az új partíciók létrehozásával a kijelölt lemezen lévő adatok ténylegesen "
-"törlésre kerülnek, de majd csak akkor, miután megerősíti a megadott "
-"változások végrehajtását."
+"Vedd figyelembe, hogy a kiválasztott lemezen lévő összes adat törlődik, de "
+"csak azután, hogy megerősítetted azt, hogy valóban végre akarod hajtani a "
+"változtatásokat."
 
 #. Type: text
 #. Description
@@ -330,7 +335,7 @@ msgstr "Szabad hely automatikus particionálása"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:21001
 msgid "All files in one partition (recommended for new users)"
-msgstr "Minden fájl egyetlen partícióra (új felhasználóknak)"
+msgstr "Minden fájl egy partíción (új felhasználóknak ajánlott)"
 
 #. Type: text
 #. Description
@@ -338,7 +343,7 @@ msgstr "Minden fájl egyetlen partícióra (új felhasználóknak)"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:22001
 msgid "Separate /home partition"
-msgstr "/home partíció külön"
+msgstr "Külön /home partíció"
 
 #. Type: text
 #. Description
@@ -358,7 +363,7 @@ msgstr "Külön /home, /var és /tmp partíciók"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:24001
 msgid "Small-disk (< 10GB) partitioning scheme"
-msgstr "Kis lemezre (<10GB) való particionálás"
+msgstr "Kis lemezek (< 10 GB) particionálási sémája"
 
 #. Type: text
 #. Description
@@ -366,4 +371,4 @@ msgstr "Kis lemezre (<10GB) való particionálás"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:25001
 msgid "Separate /var and /srv, swap < 1GB (for servers)"
-msgstr ""
+msgstr "Külön /var és /srv, swap < 1GB (szervereknél)"

@@ -37,8 +37,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2024-11-26 20:02+0000\n"
-"PO-Revision-Date: 2024-11-26 14:00+0000\n"
-"Last-Translator: Nik Nikovsky <zejdzztegomaila@gmail.com>\n"
+"PO-Revision-Date: 2025-01-31 14:41+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -126,11 +126,11 @@ msgid ""
 "marked with \"${DESTROY}\" in the main partitioning menu.  Otherwise it will "
 "be marked with \"${FORMAT}\"."
 msgstr ""
-"Zazwyczaj będziesz chciał sformatować partycję używając nowego systemu "
-"plików. ZAUWAŻ: wszystkie dane zostaną nieodwracalnie usunięte. Jeśli "
-"zdecydujesz się na sformatowanie partycji aktualnie zamontowanej, zostanie "
-"ona oznaczona jako \"${DESTROY}\" w głównym menu partycjonowania. W "
-"przeciwnym razie będzie to oznaczenie \"${FORMAT}\"."
+"Zazwyczaj należy sformatować partycję przy użyciu nowego systemu plików. "
+"UWAGA: wszystkie dane zostaną nieodwracalnie usunięte. Jeśli zdecydujesz się "
+"na sformatowanie partycji aktualnie zamontowanej, zostanie ona oznaczona "
+"jako \"${DESTROY}\" w głównym menu partycjonowania. W przeciwnym razie "
+"będzie to oznaczenie \"${FORMAT}\"."
 
 #. Type: text
 #. Description
@@ -175,8 +175,8 @@ msgid ""
 "This probably happened because there are too many (primary) partitions in "
 "the partition table."
 msgstr ""
-"Prawdopodobnie stało się to dlatego, że jest za wiele (podstawowych)partycji "
-"w tablicy partycji."
+"Prawdopodobnie stało się to dlatego, że jest za wiele (podstawowych) "
+"partycji w tablicy partycji."
 
 #. Type: select
 #. Description
@@ -199,7 +199,7 @@ msgid ""
 "results."
 msgstr ""
 "Instalator może przeprowadzić Cię przez proces partycjonowania dysku "
-"(używając różnych standardowych schematów) lub jeśli chcesz możesz tego "
+"(używając różnych standardowych schematów) lub — jeśli chcesz — możesz tego "
 "dokonać ręcznie. Jeśli wybierzesz partycjonowanie z użyciem przewodnika, "
 "nadal będzie możliwość obejrzenia rezultatów i dostosowania ich do swoich "
 "potrzeb."
@@ -215,8 +215,8 @@ msgid ""
 "If you choose guided partitioning for an entire disk, you will next be asked "
 "which disk should be used."
 msgstr ""
-"Po wybraniu partycjonowania całego dysku z przewodnikiem pojawi się pytanie "
-"którego dysku użyć."
+"Po wybraniu partycjonowania całego dysku z przewodnikiem pojawi się pytanie "
+"o dysk do użycia."
 
 #. Type: select
 #. Description
@@ -254,7 +254,7 @@ msgstr ""
 #. :sl2:
 #: ../partman-auto.templates:12001
 msgid "Unusable free space"
-msgstr "Nieprzydatna wolna przestrzeń"
+msgstr "Nieużyteczna wolna przestrzeń"
 
 #. Type: error
 #. Description
@@ -265,7 +265,7 @@ msgid ""
 "probably too many (primary) partitions in the partition table."
 msgstr ""
 "Partycjonowanie z użyciem kreatora nie powiodło się, ponieważ wolna "
-"przestrzeń nie może być wykorzystana. Prawdopodobnie posiadasz za dużo "
+"przestrzeń nie może być wykorzystana. Prawdopodobnie masz za dużo "
 "(podstawowych) partycji w tablicy partycji."
 
 #. Type: text
@@ -282,7 +282,7 @@ msgstr "Partycjonowanie z przewodnikiem"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:16001
 msgid "Guided - use the largest continuous free space"
-msgstr "Przewodnik - największa, ciągła, wolna przestrzeń"
+msgstr "Przewodnik – największa ciągła wolna przestrzeń"
 
 #. Type: text
 #. Description
@@ -290,7 +290,7 @@ msgstr "Przewodnik - największa, ciągła, wolna przestrzeń"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:17001
 msgid "Guided - use entire disk"
-msgstr "Przewodnik - cały dysk"
+msgstr "Przewodnik – cały dysk"
 
 #. Type: select
 #. Description
@@ -307,8 +307,8 @@ msgid ""
 "Note that all data on the disk you select will be erased, but not before you "
 "have confirmed that you really want to make the changes."
 msgstr ""
-"Zauważ, że wszystkie dane na wybranym dysku zostaną usunięte, ale dopiero "
-"gdy potwierdzisz, że naprawdę chcesz zastosowania zmian."
+"Należy pamiętać, że wszystkie dane na wybranym dysku zostaną usunięte, "
+"jednak nie wcześniej niż po potwierdzeniu chęci wprowadzenia zmian."
 
 #. Type: text
 #. Description
@@ -365,4 +365,4 @@ msgstr "Schemat partycjonowania małego (< 10 GB) dysku"
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:25001
 msgid "Separate /var and /srv, swap < 1GB (for servers)"
-msgstr "Oddziel /var i /srv, swap < 1 GB (dla serwerów)"
+msgstr "Oddzielne /var i /srv, swap < 1 GB (dla serwerów)"

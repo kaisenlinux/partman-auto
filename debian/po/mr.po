@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-auto@packages.debian.org\n"
 "POT-Creation-Date: 2024-11-26 20:02+0000\n"
-"PO-Revision-Date: 2023-12-10 18:08+0000\n"
-"Last-Translator: omwani <omwani03+gitlab@gmail.com>\n"
+"PO-Revision-Date: 2025-03-30 15:01+0000\n"
+"Last-Translator: Kalyani Kenekar <kalyaniknkr@gmail.com>\n"
 "Language-Team: CDAC_DI\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
@@ -332,9 +332,8 @@ msgstr "स्वतंत्र /home, /var, व /tmp विभाजने"
 #. :sl2:
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:24001
-#, fuzzy
 msgid "Small-disk (< 10GB) partitioning scheme"
-msgstr "लहान-डिस्क (< १जीबी) विभाजन योजना"
+msgstr "लहान-डिस्क (< १०जीबी) विभाजन योजना"
 
 #. Type: text
 #. Description
@@ -342,4 +341,4 @@ msgstr "लहान-डिस्क (< १जीबी) विभाजन य�
 #. TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 #: ../partman-auto.templates:25001
 msgid "Separate /var and /srv, swap < 1GB (for servers)"
-msgstr ""
+msgstr "विभाजन /var आणी /srv, स्वॅप < 1GB (सर्व्हरसाठी)"

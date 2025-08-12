@@ -175,14 +175,15 @@ msgstr "ವಿಭಜನಾ ವಿಧಾನ"
 #. Description
 #. :sl1:
 #: ../partman-auto.templates:6001
+#, fuzzy
 msgid ""
 "The installer can guide you through partitioning a disk (using different "
 "standard schemes) or, if you prefer, you can do it manually. With guided "
 "partitioning you will still have a chance later to review and customise the "
 "results."
 msgstr ""
-"${MIRROR}ನಲ್ಲಿಯ ಸ್ಥಳೀಯ ತಂತ್ರಾಂಶ ಭಂಡಾರವನ್ನು ಅನುಮೋದಿಸುವಲ್ಲಿ ಬೇಕಾದ ಸಾರ್ವಜನಿಕ ಕೀಲಿಯನ್ನು "
-"ಡೌನ್ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ಅನುಸ್ಥಾಪಕವು ವಿಫಲವಾಗಿದೆ:"
+"ನಲ್ಲಿಯ ಸ್ಥಳೀಯ ತಂತ್ರಾಂಶ ಭಂಡಾರವನ್ನು ಅನುಮೋದಿಸುವಲ್ಲಿ ಬೇಕಾದ ಸಾರ್ವಜನಿಕ ಕೀಲಿಯನ್ನು ಡೌನ್ಲೋಡ್ "
+"ಮಾಡುವಲ್ಲಿ ಅನುಸ್ಥಾಪಕವು ವಿಫಲವಾಗಿದೆ:"
 
 #. Type: select
 #. Description

@@ -188,21 +188,3 @@ Type: text
 # :sl1:
 # TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
 _Description: Separate /home partition
-
-Template: partman-auto/text/multi_scheme
-Type: text
-# :sl1:
-# TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-_Description: Separate /home, /var, and /tmp partitions
-
-Template: partman-auto/text/small_disk
-Type: text
-# :sl2:
-# TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-_Description: Small-disk (< 10GB) partitioning scheme
-
-Template: partman-auto/text/server_scheme
-Type: text
-# :sl1:
-# TRANSLATORS: This is a menu entry. Keep in under 55 columns/characters
-_Description: Separate /var and /srv, swap < 1GB (for servers)
